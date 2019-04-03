@@ -17,7 +17,7 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" name="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item list__item--active"><a href="#">Главная</a></li>
+        <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
         <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
         <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
       </ul>
@@ -25,23 +25,25 @@
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Питание Cat Energy</h1>
+    <section class="promo">
+      <h2>Функциональное питание для котов</h2>
+      <span class="promo__slogan">Занялся собой? Займись котом</span>
+      <button class="button promo__button" type="button" name="promo__button">Подобрать программу</button>
+    </section>
     <section class="programs">
-      <header class="programs__header">
-        <h2>Функциональное питание для котов</h2>
-        <span class="programs__slogan">Занялся собой? Займись котом</span>
-        <button class="program__button" type="button" name="program__button">Подобрать программу</button>
-      </header>
-      <div class="program__item program__item--loosing-weight">
-        <h3>Похудение</h3>
-        <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="program__link" href="catalog.html">Каталог слим</a>
+      <h2 class="visually-hidden">Программы питания </h2>
+      <div class="programs__item programs__item--loosing-weight">
+        <<h3 class="programs__head--loosing-weight"></h3>>Похудение</h3>
+        <p class="programs__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="programs__link" href="catalog.html">Каталог слим</a>
       </div>
-      <div class="program__item program__item--loosing-weight">
+      <div class="programs__item programs__item--loosing-weight">
         <h3>Набор массы</h3>
-        <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="program__link" href="catalog.html">Каталог PRO</a>
+        <p class="programs__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="programs__link" href="catalog.html">Каталог PRO</a>
       </div>
-      <div class="work-description">
+    </section>
+    <section class="work-description">
         <h3>Как это работает</h3>
         <ul class="work-description__list">
           <li class="work-description__item">Функциональное питание содержит только полезные питательные вещества.</li>
@@ -59,7 +61,7 @@
       </a>
     </div>
     <div class="page-footer__social social">
-      <ul class="social_list">
+      <ul class="social__list">
         <li class="social__item"><a href="" class="social__link social__link--vk">Вконтакте</a></li>
         <li class="social__item"><a href="" class="social__link social__link--instagram">Инстаграм</a></li>
         <li class="social__item"><a href="" class="social__link social__link--facebook">Facebook</a></li>
