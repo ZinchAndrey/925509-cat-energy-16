@@ -1,0 +1,52 @@
+.products-item {
+  border-bottom: 1px solid @light-grey;
+  padding: 25px 20px;
+  box-sizing: border-box;
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__table {
+    font-family: @arial;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    width: 140px;
+    color: @grey-text;
+  }
+
+  &__column:last-child {
+    text-align: right;
+  }
+
+  &__button {
+    width: 280px;
+    margin: 25px auto;
+  }
+
+  &__title--more {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  &__slogan {
+    font-family: @arial;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: none;
+    color: @grey-text;
+    text-align: center;
+    margin-bottom: 20px;
+    /* !!! последние два свойста не срабатывают */
+  }
+
+  &__button--show {
+    background-color: @grey;
+    width: 280px;
+    color: @grey-text;
+  }
+}

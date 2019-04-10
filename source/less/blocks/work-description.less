@@ -1,7 +1,7 @@
 .work-description {
   box-sizing: border-box;
-  width: 320px;
-  padding: 30px 20px;
+  padding: 0 20px;
+  margin-bottom: 30px;
 
   &__title {
     font-size: 36px;
@@ -13,12 +13,11 @@
   }
 
   &__list {
-    list-style: none;
-    padding-left: 0px;
+    .list-style-none;
   }
 
   &__item {
-    font-family: Arial, sans-serif;
+    font-family: @arial;
     text-transform: none;
     font-size: 14px;
     line-height: 18px;
@@ -31,10 +30,10 @@
     }
   }
 
-  &__item--background {
+  &__icon {
     width: 50px;
     height: 50px;
-    background-color: #68b738;
+    background-color: @green;
     padding: 5px;
   }
 }

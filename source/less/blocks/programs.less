@@ -1,9 +1,22 @@
 .programs {
-  width: 320px;
+
+  &__icon {
+    text-align: center;
+
+    &::before{
+      content: ' ';
+      display: inline-block;
+      border-radius: 50%;
+      border: 25px solid @green;
+      width: 1px;
+      height: 1px;
+      background-color: @green;
+    }
+  }
 
   &__item {
-    margin-top: 20px;
-    background-color: #f2f2f2;
+    margin-bottom: 20px;
+    background-color: @grey;
     width: 280px;
     margin: 0 auto;
   }
@@ -27,13 +40,13 @@
   }
 
   &__description {
-      font-family: Arial, sans-serif;
+      font-family: @arial;
       text-transform: none;
       font-size: 14px;
       line-height: 18px;
       width: 235px;
       margin: auto;
-      border-bottom: 1px solid #d9d9d9;
+      border-bottom: 1px solid @light-grey;
       padding-bottom: 25px;
   }
 
