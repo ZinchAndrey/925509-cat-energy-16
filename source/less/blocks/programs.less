@@ -1,0 +1,58 @@
+.programs {
+  &__icon {
+    text-align: center;
+
+    &::before {
+      content: " ";
+      display: inline-block;
+      border-radius: 50%;
+      border: 25px solid @green;
+      width: 1px;
+      height: 1px;
+      background-color: @green;
+    }
+  }
+
+  &__item {
+    background-color: @grey;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 40px;
+
+    &--loosing-weight svg {
+      height: 49px;
+      width: 35px;
+    }
+
+    &--weight-gain svg {
+      height: 28px;
+      width: 67px;
+    }
+  }
+
+  &__description {
+    font-family: @arial;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 18px;
+    width: 235px;
+    margin: auto;
+    border-bottom: 1px solid @light-grey;
+    padding-bottom: 25px;
+  }
+
+  &__link {
+    display: block;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 20px;
+  }
+}
