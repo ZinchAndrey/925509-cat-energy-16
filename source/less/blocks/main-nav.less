@@ -16,3 +16,22 @@
     cursor: pointer;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-left: 55px;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      width: 440px;
+      justify-content: space-between;
+    }
+  }
+}

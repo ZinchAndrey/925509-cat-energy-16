@@ -7,3 +7,24 @@
     border-top: 1px solid @light-grey;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .site-list {
+    &__item {
+      padding: 5px 0px;
+      border-top: none;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
+
+      &--active {
+        border-bottom: 2px solid @green;
+      }
+    }
+  }
+}

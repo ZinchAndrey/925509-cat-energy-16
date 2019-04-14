@@ -56,3 +56,40 @@
     padding: 20px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .programs {
+    &__item {
+      width: 708px;
+      padding: 80px 280px 60px 50px;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 37px;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      width: 372px;
+      border-bottom: none;
+      padding-bottom: 60px;
+    }
+
+    &__link {
+      font-size: 20px;
+      line-height: 20px;
+      padding: 0;
+
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+}

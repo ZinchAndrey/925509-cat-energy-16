@@ -35,3 +35,40 @@
     width: 280px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .promo {
+    background-image: url("..img/index-can-tablet@1x.jpg");
+    background-size: 709px 609px;
+    // ??? почему-то фон не появляется
+    margin-left: 110px;
+    margin-bottom: 530px;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      color: @black;
+      text-transform: none;
+      text-align: left;
+      padding: 0;
+      padding-right: 200px;
+      margin-bottom: 35px;
+
+    }
+
+    &__slogan {
+      color: @black;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: left;
+    }
+
+    &__button {
+      font-size: 20px;
+      line-height: 20px;
+      width: 245px;
+      padding: 15px 5px;
+      margin: 0;
+    }
+  }
+}
