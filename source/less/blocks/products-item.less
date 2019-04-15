@@ -16,6 +16,7 @@
     text-transform: none;
     width: 140px;
     color: @grey-text;
+    border-collapse: collapse;
   }
 
   &__column:last-child {
@@ -48,5 +49,71 @@
     background-color: @grey;
     width: 280px;
     color: @grey-text;
+  }
+
+  &__button--show:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products-item {
+    padding: 0;
+    width: 324px;
+    background-color: @grey;
+    margin-bottom: 140px;
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+      display: block;
+      text-align: center;
+      width: 140px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    &__table {
+      font-size: 16px;
+      width: 255px;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    &__column {
+      border-bottom: 1px solid @light-grey;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    &__button {
+      width: 250px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .products-item:last-child {
+    background-color: @white;
+    border: 1px solid @grey;
+
+// как правильно использовать амперсант при наличии псевдокласса?
+    .products-item__title {
+      padding-top: 145px;
+    }
+
+    .products-item__slogan {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 110px;
+    }
+
+    .products-item__button--show {
+      width: 250px;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
   }
 }
