@@ -1,6 +1,5 @@
 .work-description {
-  box-sizing: border-box;
-  padding: 0 20px;
+  .container;
   margin-bottom: 30px;
 
   &__title {
@@ -23,11 +22,6 @@
     line-height: 18px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-
-    & span {
-      margin-left: 20px;
-    }
   }
 
   &__icon {
@@ -35,6 +29,11 @@
     height: 50px;
     background-color: @green;
     padding: 5px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-left: 20px;
   }
 }
 
@@ -73,10 +72,10 @@
       min-height: 230px;
       justify-content: flex-start;
       margin-bottom: 90px;
+    }
 
-      & span {
-        margin: 0;
-      }
+    &__text {
+      margin: 0;
     }
   }
 }

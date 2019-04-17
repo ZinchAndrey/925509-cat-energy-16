@@ -4,16 +4,22 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  width: 320px;
+  position: relative;
 
   &__toggle {
+    position: absolute;
+    right: 20px;
+    top: -45px;
     display: block;
-    width: 24px;
-    height: 20px;
     background-color: inherit;
     font-family: inherit;
     border: none;
     cursor: pointer;
+
+    & svg {
+      width: 24px;
+      height: 20px;
+    }
   }
 }
 
