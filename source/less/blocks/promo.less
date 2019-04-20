@@ -45,9 +45,14 @@
   .promo {
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-size: 709px 609px;
-    background-position: -50px 200px;
-    margin-left: 95px;
+    background-position: 0 200px;
+    padding-left: 90px;
     padding-bottom: 530px;
+    margin-bottom: 0;
+
+    &__wrapper {
+      padding: 0;
+    }
 
     &__title {
       font-size: 60px;
@@ -55,9 +60,10 @@
       color: @black;
       text-transform: none;
       text-align: left;
+      max-width: 70%;
       padding: 0;
-      padding-right: 200px;
-      margin-bottom: 35px;
+      margin: 0;
+      margin-bottom: 45px;
     }
 
     &__slogan {
@@ -65,6 +71,7 @@
       font-size: 20px;
       line-height: 20px;
       text-align: left;
+      margin-bottom: 50px;
     }
 
     &__button {
@@ -73,6 +80,10 @@
       width: 245px;
       padding: 15px 5px;
       margin: 0;
+    }
+
+    &__image {
+      display: none;
     }
   }
 }

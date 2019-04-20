@@ -16,7 +16,16 @@
     padding: 20px 0;
     margin: 0;
     position: relative;
+    display: flex;
+  }
 
+  &__icon {
+    position: relative;
+    z-index: 2;
+    // text-align: center;
+    // // position: absolute;
+    // top: 20px;
+    // left: 10px;
 
     &::before {
       content: "";
@@ -26,15 +35,9 @@
       width: 1px;
       height: 1px;
       background-color: @green;
-      vertical-align: middle;
+      position: absolute;
+      z-index: 1;
     }
-  }
-
-  &__icon {
-    text-align: center;
-    position: absolute;
-    top: 20px;
-    left: 10px;
   }
 
   &__description {
@@ -57,11 +60,21 @@
 
 @media (min-width: @tablet-width) {
   .programs {
+    padding: 0;
+
     &__item {
-      width: 708px;
+      width: auto;
       padding: 80px 280px 60px 50px;
       text-align: left;
       margin-bottom: 30px;
+      position: relative;
+    }
+
+    &__icon {
+      display: block;
+      position: absolute;
+      left: 400px;
+      top: 100px;
     }
 
     &__title {
@@ -75,7 +88,6 @@
     &__description {
       font-size: 16px;
       line-height: 24px;
-      width: 372px;
       border-bottom: none;
       padding-bottom: 60px;
     }
