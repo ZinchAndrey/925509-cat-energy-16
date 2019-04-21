@@ -1,0 +1,67 @@
+.contacts {
+  &__wrapper {
+    .container;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  &__info {
+    font-family: @arial;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 20px;
+    width: 50%;
+    margin: 0;
+
+    &--adress {
+      width: 100%;
+    }
+
+    &--town {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__map img {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    &__wrapper {
+      .container-tablet;
+      padding: 65px 70px;
+    }
+
+    &__title {
+      width: 25%;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__info {
+      text-align: right;
+      display: inline-block;
+      width: 50%;
+      font-size: 16px;
+      line-height: 20px;
+
+      &--adress {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

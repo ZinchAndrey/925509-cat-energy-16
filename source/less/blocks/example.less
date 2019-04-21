@@ -1,4 +1,67 @@
 .example {
-  .container;
   background-color: @grey;
+
+  &__title {
+    .container;
+    font-size: 36px;
+    line-height: 60px;
+    text-transform: none;
+    font-weight: 400;
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    .container;
+  }
+
+  &__info {
+    font-family: @arial;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 30px;
+    width: 95%;
+  }
+
+  &__list {
+    .list-style-none();
+    display: flex;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+
+    &__wrapper {
+      .container-tablet;
+    }
+
+    &__title {
+      .container-tablet;
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 70px;
+    }
+
+    &__info {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__result {
+      background-color: @grey;
+      .container-tablet;
+
+      &--after,
+      &--before {
+        // margin-top: -80px;
+      }
+    }
+
+    &__list {
+      margin-bottom: 250px;
+    }
+  }
 }

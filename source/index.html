@@ -107,10 +107,34 @@
             <span class="example-item__result">15 000 руб.</span>
           </li>
         </ul>
-        <div class="example__result">
-          <img src="img/before-mobile@1x.png" alt="Cat before">
-          <img src="img/after-mobile@1x.png" alt="Cat after">
+      </div>
+      <div class="example__result">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
+          <img class="example__result example__result--before" src="img/before-mobile@1x.png" alt="Cat before">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png">
+          <img class="example__result example__result--after" src="img/after-mobile@1x.png" alt="Cat after">
+        </picture>
         </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="contacts__info">
+          <p class="contacts__info contacts__info--adress">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__info contacts__info--town">Санкт-Петербург</p>
+        </div>
+      </div>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+          <img src="img/bg-map-mobile@1x.png" alt="Адрес компании">
+        </picture>
       </div>
     </section>
   </main>
