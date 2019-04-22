@@ -137,5 +137,26 @@
       margin: 0;
       margin-bottom: 80px;
     }
+
+    &__icon {
+      top: 0;
+      left: 0;
+      margin-right: 40px;
+      position: relative;
+
+      &::before {
+        border: 50px solid @green;
+      }
+
+      &--loosing-weight img {
+        height: 100%;
+        width: 70px;
+      }
+
+      &--weight-gain img {
+        height: 100%;
+        width: 134px;
+      }
+    }
   }
 }
