@@ -15,7 +15,6 @@
     text-align: left;
     padding: 20px 0;
     margin: 0;
-    // position: relative;
     display: flex;
     align-items: center;
   }
@@ -77,10 +76,25 @@
     }
 
     &__icon {
-      display: block;
       position: absolute;
-      left: 400px;
+      left: 450px;
       top: 100px;
+      height: auto;
+      width: auto;
+
+      &--loosing-weight img {
+        height: 100%;
+        width: 140px;
+      }
+
+      &--weight-gain img {
+        height: 100%;
+        width: 268px;
+      }
+
+      &::before {
+        border: 100px solid @green;
+      }
     }
 
     &__title {
