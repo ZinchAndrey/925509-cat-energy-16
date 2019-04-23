@@ -20,6 +20,8 @@
 
 @media (min-width: @tablet-width) {
   .products {
+    .container-tablet;
+
     &__main-title {
       font-size: 60px;
       line-height: 60px;
@@ -32,6 +34,15 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      width: 100%;
     }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products {
+    .container-desktop;
+    padding-top: 70px;
+    padding-bottom: 70px;
   }
 }

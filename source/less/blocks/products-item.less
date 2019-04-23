@@ -68,27 +68,29 @@
 
 @media (min-width: @tablet-width) {
   .products-item {
-    padding: 40px;
-    padding-top: 0;
+    padding: 0 38px 40px;
     width: 324px;
     background-color: @grey;
+    margin: 0;
+    // для резины гораздо лучше тут margin: 0 auto; но тогда несоответствие макету на 768px
     margin-bottom: 140px;
     display: block;
+    border: none;
 
-    &:nth-child(2n+1) .products-item__image {
+    &__image {
+      width: calc(100% + 80px);
       margin-top: -45px;
       margin-bottom: 50px;
       margin-left: -40px;
+      margin-right: -20px;
     }
 
-    &:nth-child(2n) .products-item__image {
+    &__image--big {
       margin-top: -80px;
-      margin-bottom: 50px;
-      margin-left: -40px;
     }
 
     &__info {
-      width: 100%;
+      width: auto;
     }
 
     &__title {
@@ -96,7 +98,6 @@
       line-height: 20px;
       display: block;
       text-align: center;
-      width: 140px;
       margin: 0 auto;
       margin-bottom: 25px;
     }
@@ -137,10 +138,22 @@
     }
 
     .products-item__button--show {
-      width: 250px;
+      width: 100%;
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-item {
+    width: calc(25% - 60px);
+    margin-right: 60px;
+    box-sizing: border-box;
+
+    &:nth-child(4n) {
+      margin-right: 0;
     }
   }
 }
