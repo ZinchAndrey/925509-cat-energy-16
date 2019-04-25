@@ -68,12 +68,11 @@
 
 @media (min-width: @tablet-width) {
   .products-item {
+    margin: 0 60px 140px 0;
     padding: 0 38px 40px;
     width: calc(50% - 30px);
-    margin-right: 60px;
     background-color: @grey;
     // для резины гораздо лучше тут margin: 0 auto; но тогда несоответствие макету на 768px
-    margin-bottom: 140px;
     display: block;
     border: none;
 
@@ -155,6 +154,10 @@
     width: calc(25% - 60px);
     margin-right: 60px;
     box-sizing: border-box;
+
+    &:nth-child(2n) {
+      margin-right: 60px;
+    }
 
     &:nth-child(4n) {
       margin-right: 0;
