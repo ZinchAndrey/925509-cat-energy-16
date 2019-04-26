@@ -1,0 +1,24 @@
+.example-item {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__expenses {
+    padding: 18px 22px;
+    border: 1px solid @light-grey;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+
+    &--inline {
+      border: none;
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  &--inline {
+    display: inline-block;
+  }
+}
