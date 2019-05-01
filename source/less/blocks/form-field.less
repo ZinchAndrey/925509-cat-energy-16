@@ -1,8 +1,6 @@
 .form-field {
   display: flex;
   padding-top: 15px;
-  font-size: 16px;
-  line-height: 18px;
   width: 100%;
   align-items: center;
 
@@ -16,5 +14,22 @@
     text-transform: uppercase;
     border: 1px solid @light-grey;
     flex-grow: 1;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-field {
+    input {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-field {
+    &--contacts {
+      width: 45%;
+    }
   }
 }

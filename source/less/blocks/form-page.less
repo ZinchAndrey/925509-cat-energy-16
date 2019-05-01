@@ -1,6 +1,9 @@
 .form-page {
-  &__main-title {
+  &__wrapper {
     .container;
+  }
+
+  &__main-title {
     font-size: 36px;
     line-height: 60px;
     text-transform: none;
@@ -9,9 +12,44 @@
   }
 
   &__info {
-    .container;
     margin-left: 0;
     width: 85%;
     text-align: left;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-page {
+    &__wrapper {
+      .container-tablet;
+    }
+
+    &__main-title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 55px;
+    }
+
+    &__info {
+      margin: 0;
+      width: 50%;
+      padding-left: 40px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-page {
+    &__wrapper {
+      .container-desktop;
+    }
+
+    &__info {
+      padding: 0;
+      box-sizing: content-box;
+      width: 330px;
+    }
   }
 }
