@@ -1,12 +1,20 @@
 .products-item {
   border-bottom: 1px solid @light-grey;
-  padding: 25px 20px;
-  box-sizing: border-box;
+  .container;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__info {
+    width: 50%;
+  }
 
   &__title {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    width: 60%;
   }
 
   &__table {
@@ -14,8 +22,10 @@
     font-size: 12px;
     line-height: 16px;
     text-transform: none;
-    width: 140px;
+    width: 100%;
+    box-sizing: border-box;
     color: @grey-text;
+    border-collapse: collapse;
   }
 
   &__column:last-child {
@@ -24,10 +34,11 @@
 
   &__button {
     width: 280px;
-    margin: 25px auto;
+    margin: 0 auto;
   }
 
   &__title--more {
+    width: 100%;
     margin: 0;
     text-align: center;
     margin-bottom: 10px;
@@ -39,8 +50,8 @@
     line-height: 16px;
     text-transform: none;
     color: @grey-text;
-    text-align: center;
     display: block;
+    margin: 0 auto;
     margin-bottom: 20px;
   }
 
@@ -48,5 +59,108 @@
     background-color: @grey;
     width: 280px;
     color: @grey-text;
+  }
+
+  &__button--show:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .products-item {
+    margin: 0 60px 140px 0;
+    padding: 0 38px 40px;
+    width: calc(50% - 30px);
+    background-color: @grey;
+    // для резины гораздо лучше тут margin: 0 auto; но тогда несоответствие макету на 768px
+    display: block;
+    border: none;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &__image {
+      width: calc(100% + 80px);
+      margin-top: -45px;
+      margin-bottom: 50px;
+      margin-left: -40px;
+      margin-right: -20px;
+    }
+
+    &__image--big {
+      margin-top: -80px;
+    }
+
+    &__info {
+      width: auto;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 20px;
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 25px;
+    }
+
+    &__table {
+      font-size: 16px;
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    &__column {
+      border-bottom: 1px solid @light-grey;
+      padding-bottom: 5px;
+      padding-top: 10px;
+    }
+
+    &__button {
+      width: 100%;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  .products-item--more {
+    background-color: @white;
+    border: 1px solid @grey;
+
+    .products-item__title {
+      padding-top: 180px;
+    }
+
+    .products-item__slogan {
+      font-size: 16px;
+      line-height: 16px;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .products-item__button--show {
+      width: 100%;
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products-item {
+    width: calc(25% - 60px);
+    margin-right: 60px;
+    box-sizing: border-box;
+
+    &:nth-child(2n) {
+      margin-right: 60px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 }

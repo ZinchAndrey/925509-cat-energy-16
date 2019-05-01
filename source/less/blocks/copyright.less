@@ -5,10 +5,24 @@
   text-transform: none;
   font-family: @arial;
   color: #717171;
+  align-items: center;
 
   &__logo {
-    display: block;
     width: 27px;
     height: 34px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+
+    &__logo {
+      width: 27px;
+      height: 34px;
+      margin-left: 25px;
+    }
   }
 }

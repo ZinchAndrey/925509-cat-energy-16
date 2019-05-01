@@ -1,6 +1,5 @@
 .work-description {
-  box-sizing: border-box;
-  padding: 0 20px;
+  .container;
   margin-bottom: 30px;
 
   &__title {
@@ -10,6 +9,7 @@
     font-weight: 400;
     padding: 0;
     margin: 0;
+    margin-bottom: 40px;
   }
 
   &__list {
@@ -23,11 +23,6 @@
     line-height: 18px;
     margin-bottom: 20px;
     display: flex;
-    justify-content: space-between;
-
-    & span {
-      margin-left: 20px;
-    }
   }
 
   &__icon {
@@ -35,5 +30,66 @@
     height: 50px;
     background-color: @green;
     padding: 5px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .work-description {
+    padding: 0;
+    .container-tablet;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+      margin-bottom: 75px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__icon {
+      width: 80px;
+      height: 80px;
+      box-sizing: border-box;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      box-sizing: border-box;
+      padding-right: 90px;
+      font-size: 16px;
+      line-height: 24px;
+      min-height: 230px;
+      justify-content: flex-start;
+      margin-bottom: 90px;
+    }
+
+    &__text {
+      margin: 0;
+    }
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .work-description {
+    .container-desktop;
+
+    &__item {
+      width: 245px;
+      padding: 0;
+    }
   }
 }

@@ -1,5 +1,39 @@
 .page-header {
   &__wrapper {
-    padding: 0 20px;
+    .container;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__logo-link img {
+    display: block;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    .container-tablet;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    &__wrapper {
+      padding: 0;
+      margin: 0;
+
+      img {
+        width: 175px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    .container-desktop;
+    padding-top: 50px;
   }
 }

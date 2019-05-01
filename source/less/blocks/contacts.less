@@ -1,0 +1,109 @@
+.contacts {
+  &__wrapper {
+    .container;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  &__info {
+    font-family: @arial;
+    text-transform: none;
+    font-size: 14px;
+    line-height: 20px;
+    width: 50%;
+    margin: 0;
+
+    &--adress {
+      width: 100%;
+    }
+
+    &--town {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  &__map img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  &--grey {
+    background-color: @grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts {
+    &__wrapper {
+      .container-tablet;
+      padding: 65px 70px;
+    }
+
+    &__title {
+      width: 25%;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__info {
+      text-align: right;
+      display: inline-block;
+      width: 50%;
+      font-size: 16px;
+      line-height: 20px;
+
+      &--adress {
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    &__container {
+      .container-desktop;
+      position: relative;
+    }
+
+    &__wrapper {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      width: 570px;
+      background-color: @white;
+      padding: 65px 75px;
+    }
+
+    &__title {
+      width: 30%;
+    }
+
+    &__info {
+      width: 43%;
+      text-align: left;
+      display: block;
+
+      &--adress {
+        width: auto;
+      }
+
+      &--town {
+        width: auto;
+      }
+    }
+  }
+}

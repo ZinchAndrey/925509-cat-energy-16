@@ -1,11 +1,12 @@
 .social {
   &__list {
-    list-style: none;
+    .list-style-none;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid @light-grey;
     border-top: 1px solid @light-grey;
     padding: 20px 80px;
+    align-items: center;
   }
 
   &__link--vk {
@@ -27,5 +28,31 @@
     width: 10px;
     height: 19px;
     fill: @dark-grey;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    &__list {
+      border: none;
+      width: 130px;
+      padding: 0;
+      margin: 0;
+    }
+
+    &__link--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &__link--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &__link--facebook {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

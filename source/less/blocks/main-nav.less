@@ -4,15 +4,45 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
-  width: 320px;
+  position: relative;
 
   &__toggle {
+    position: absolute;
+    right: 20px;
+    top: -45px;
     display: block;
-    width: 24px;
-    height: 20px;
     background-color: inherit;
     font-family: inherit;
     border: none;
     cursor: pointer;
+
+    & svg {
+      width: 24px;
+      height: 20px;
+    }
   }
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    // margin-left: 55px;
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      width: 440px;
+      justify-content: space-between;
+    }
+  }
+}
+
+// @media (min-width: @desktop-width) {
+//   .main-nav {
+//   }
+// }

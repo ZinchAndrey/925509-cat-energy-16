@@ -1,0 +1,124 @@
+.example-item {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &--inline {
+    width: 100%;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  &__expenses {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    display: block;
+    border: 1px solid @light-grey;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    z-index: 0;
+
+    &--inline {
+      border: none;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0;
+      width: auto;
+    }
+  }
+
+  &__result {
+    position: absolute;
+    font-family: @arial;
+    font-size: 12px;
+    line-height: 12px;
+    text-transform: lowercase;
+    display: block;
+    width: auto;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    background-color: @grey;
+    transform: translate(-50%, -40%);
+    padding: 0 15px;
+    z-index: 1;
+
+    &--inline {
+      position: static;
+      transform: none;
+      font-family: @oswald;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 0;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .example-item {
+    width: 23%;
+
+    &--inline {
+      width: 42%;
+      margin: 0;
+      flex-wrap: wrap;
+      padding-left: 40px;
+      box-sizing: border-box;
+    }
+
+    &__expenses {
+      font-size: 30px;
+      line-height: 37px;
+
+      &--inline {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: auto;
+      }
+    }
+
+    &__result {
+      font-size: 14px;
+      line-height: 14px;
+      background-color: @white;
+      width: auto;
+
+      &--inline {
+        font-size: 20px;
+        line-height: 20px;
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example-item {
+    width: 42%;
+
+    &--inline {
+      flex-wrap: nowrap;
+      width: 83%;
+      padding: 50px 0;
+      justify-content: space-between;
+    }
+
+    &__expenses {
+      &--inline {
+        margin-left: 0;
+      }
+    }
+
+    &__result {
+      background-color: @grey;
+    }
+  }
+}
