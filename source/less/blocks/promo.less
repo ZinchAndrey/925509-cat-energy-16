@@ -44,9 +44,6 @@
 @media (min-width: @tablet-width) {
   .promo {
     background-image: none;
-    // background-image: url("../img/index-can-tablet@1x.jpg");
-    // background-size: 709px 609px;
-    // background-position: 0 200px;
     padding-left: 90px;
     padding-bottom: 540px;
     margin-bottom: 0;
@@ -103,13 +100,25 @@
     padding-top: 80px;
     padding-bottom: 190px;
     margin-bottom: 80px;
-    // background-image: url("../img/index-can-desktop@1x.png");
-    // background-size: 552px 499px;
-    // background-position: 450px 0;
+    position: relative;
 
     &__image {
       top: 0;
       left: 500px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 720px 100%;
+      background-repeat: no-repeat;
+      z-index: -1;
+      display: block;
+      width: 720px;
+      height: 696px;
+      top: -130px;
+      right: -70px;
     }
   }
 }
