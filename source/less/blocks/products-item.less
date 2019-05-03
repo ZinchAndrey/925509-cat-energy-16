@@ -59,10 +59,16 @@
     background-color: @grey;
     width: 280px;
     color: @grey-text;
-  }
 
-  &__button--show:active {
-    opacity: 0.3;
+    &:hover {
+      background-color: darken(@grey, 5%);
+    }
+
+    &:active {
+      background-color: darken(@grey, 5%);
+      color: @grey-text;
+      opacity: 0.3;
+    }
   }
 }
 
