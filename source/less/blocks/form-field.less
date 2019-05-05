@@ -1,8 +1,13 @@
 .form-field {
   display: flex;
-  padding-top: 15px;
+  padding-bottom: 15px;
   width: 100%;
   align-items: center;
+  white-space: nowrap;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 
   input {
     box-sizing: border-box;
@@ -14,6 +19,14 @@
     text-transform: uppercase;
     border: 1px solid @light-grey;
     flex-grow: 1;
+
+    &:hover {
+      border: 1px solid darken(@light-grey, 10%);
+    }
+
+    &:active {
+      border: 2px solid darken(@light-grey, 100%);
+    }
   }
 }
 

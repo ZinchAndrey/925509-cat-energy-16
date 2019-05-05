@@ -11,6 +11,15 @@
   margin: 0 auto;
   padding: 13px 20px;
   text-align: center;
+
+  &:hover {
+    background-color: darken(@green, 5%);
+  }
+
+  &:active {
+    background-color: darken(@green, 5%);
+    color: lighten(@green, 15%);
+  }
 }
 
 @media (min-width: @tablet-width) {

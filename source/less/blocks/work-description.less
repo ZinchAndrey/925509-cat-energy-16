@@ -23,6 +23,7 @@
     line-height: 18px;
     margin-bottom: 20px;
     display: flex;
+    position: relative;
   }
 
   &__icon {
@@ -35,6 +36,11 @@
   &__text {
     margin: 0;
     margin-left: 20px;
+  }
+
+  &__background-number {
+    display: none;
+    position: absolute;
   }
 }
 
@@ -78,6 +84,18 @@
 
     &__text {
       margin: 0;
+    }
+
+    &__background-number {
+      display: block;
+      position: absolute;
+      top: -40px;
+      left: 120px;
+      font-family: @oswald;
+      font-size: 281px;
+      line-height: 281px;
+      color: @grey;
+      z-index: -1;
     }
   }
 }

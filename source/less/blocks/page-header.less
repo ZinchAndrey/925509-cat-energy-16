@@ -8,6 +8,16 @@
   &__logo-link img {
     display: block;
   }
+
+  &__logo-image {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -35,5 +45,7 @@
   .page-header {
     .container-desktop;
     padding-top: 50px;
+    position: relative;
+    z-index: 2;
   }
 }

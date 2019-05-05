@@ -7,6 +7,14 @@
     padding-bottom: 20px;
     text-align: center;
     border-top: 1px solid @light-grey;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -28,6 +36,20 @@
 
       &--active {
         border-bottom: 2px solid @green;
+      }
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    &__item {
+      &--index {
+        color: @white;
+      }
+
+      &--index-active {
+        border-bottom: 2px solid @white;
       }
     }
   }
