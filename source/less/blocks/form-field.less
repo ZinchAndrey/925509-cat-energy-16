@@ -4,6 +4,7 @@
   width: 100%;
   align-items: center;
   white-space: nowrap;
+  position: relative;
 
   &:last-child {
     padding-bottom: 0;
@@ -24,9 +25,23 @@
       border: 1px solid darken(@light-grey, 10%);
     }
 
-    &:active {
+    &:focus {
       border: 2px solid darken(@light-grey, 100%);
+
+      & + svg {
+        color: @green;
+      }
     }
+  }
+
+  &--contacts-email svg {
+    position: absolute;
+    right: 16px;
+  }
+
+  &__contacts--phone svg {
+    position: absolute;
+    right: 12px;
   }
 }
 
@@ -36,12 +51,20 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    &__contacts--email svg {
+      right: 20px;
+    }
+
+    &__contacts--phone svg {
+      right: 16px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-field {
-    &--contacts {
+    &__contacts {
       width: 45%;
     }
   }
