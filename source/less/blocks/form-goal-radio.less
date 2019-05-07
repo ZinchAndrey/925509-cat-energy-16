@@ -1,8 +1,54 @@
 .form-goal-radio {
   display: block;
   margin-bottom: 28px;
+  position: relative;
+  padding-left: 45px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover &__description::before {
+    border: 1px solid @dark-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &__description::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid @light-grey;
+    position: absolute;
+    left: 0;
+    top: -5px;
+  }
+
+  &__input:checked + .form-goal-radio__description::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: @green;
+    border-radius: 12px;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-goal-radio {
+    padding-left: 0;
+
+    &__description::before {
+      left: -50px;
+    }
+
+    &__input:checked + .form-goal-radio__description::after {
+      left: -40px;
+    }
   }
 }

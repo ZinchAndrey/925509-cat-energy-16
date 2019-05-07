@@ -7,13 +7,13 @@
   color: #717171;
   align-items: center;
 
-  &__logo {
-    width: 27px;
-    height: 34px;
+  &:hover {
+    color: @green;
+  }
 
-    // &:hover svg {
-    //   fill: @green;
-    // }
+  &:active {
+    color: @green;
+    opacity: 0.3;
   }
 }
 
@@ -24,8 +24,6 @@
     line-height: 16px;
 
     &__logo {
-      width: 27px;
-      height: 34px;
       margin-left: 25px;
     }
   }

@@ -1,16 +1,57 @@
 .form-checkbox {
   // display: block;
   margin-bottom: 28px;
+  position: relative;
+  padding-left: 45px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &:hover &__description::before {
+    border: 1px solid @dark-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &__description::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid @light-grey;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    color: @green;
+  }
+
+  &__input:checked + .form-checkbox__description::before {
+    background-size: 21px 16px;
+    background-image: url("../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .form-checkbox {
+    padding-left: 60px;
+
     &--extra {
       width: 45%;
+    }
+
+    &__description::before {
+      width: 40px;
+      height: 40px;
+      top: -10px;
+      left: 0;
+    }
+
+    &__input:checked + .form-checkbox__description::before {
+      background-position: 10px 10px;
     }
   }
 }
