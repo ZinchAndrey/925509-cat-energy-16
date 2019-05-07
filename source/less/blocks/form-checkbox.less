@@ -2,6 +2,7 @@
   // display: block;
   margin-bottom: 28px;
   position: relative;
+  padding-left: 45px;
 
   &:last-child {
     margin-bottom: 0;
@@ -22,7 +23,7 @@
     border: 1px solid @light-grey;
     position: absolute;
     top: -5px;
-    left: -45px;
+    left: 0;
     color: @green;
   }
 
@@ -34,14 +35,23 @@
   }
 }
 
-// .form-checkbox:hover .form-checkbox__description::before {
-//   border: 1px solid @dark-grey;
-// }
-
 @media (min-width: @tablet-width) {
   .form-checkbox {
+    padding-left: 60px;
+
     &--extra {
       width: 45%;
+    }
+
+    &__description::before {
+      width: 40px;
+      height: 40px;
+      top: -10px;
+      left: 0;
+    }
+
+    &__input:checked + .form-checkbox__description::before {
+      background-position: 10px 10px;
     }
   }
 }

@@ -2,6 +2,7 @@
   display: block;
   margin-bottom: 28px;
   position: relative;
+  padding-left: 45px;
 
   &:last-child {
     margin-bottom: 0;
@@ -19,10 +20,10 @@
     content: "";
     width: 30px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 30px;
     border: 1px solid @light-grey;
     position: absolute;
-    left: -40px;
+    left: 0;
     top: -5px;
   }
 
@@ -31,9 +32,23 @@
     width: 12px;
     height: 12px;
     background-color: @green;
-    border-radius: 15px;
+    border-radius: 12px;
     position: absolute;
-    left: -30px;
+    left: 10px;
     top: 5px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-goal-radio {
+    padding-left: 0;
+
+    &__description::before {
+      left: -50px;
+    }
+
+    &__input:checked + .form-goal-radio__description::after {
+      left: -40px;
+    }
   }
 }
