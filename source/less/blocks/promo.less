@@ -3,8 +3,13 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 320px, 305px;
+  background-position: top center;
   color: @white;
   margin-bottom: 20px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 
   &__wrapper {
     .container;
@@ -119,6 +124,10 @@
       height: 696px;
       top: -130px;
       right: -70px;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
     }
   }
 }

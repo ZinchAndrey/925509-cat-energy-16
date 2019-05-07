@@ -34,10 +34,23 @@
     }
   }
 
+  &__map {
+    position: relative;
+
+    & iframe {
+      border: none;
+    }
+  }
+
   &__map img {
     display: block;
     width: auto;
     margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
   }
 
   &--grey {
@@ -68,6 +81,11 @@
       &--adress {
         margin-bottom: 15px;
       }
+    }
+
+    &__map img {
+      width: 100%;
+      height: auto;
     }
   }
 }

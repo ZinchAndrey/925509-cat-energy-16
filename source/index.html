@@ -41,9 +41,17 @@
         <h2 class="promo__title">Функциональное питание для котов</h2>
         <div class="promo__slogan">Занялся собой? Займись котом</div>
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
-          <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro" class="promo__image">
+          <source
+            media="(min-width: 1300px)"
+            srcset="img/index-can-desktop@1x.png 1x,
+                    img/index-can-desktop@2x.png 2x">
+          <source
+            media="(min-width: 768px)"
+            srcset="img/index-can-tablet@1x.jpg 1x,
+                    img/index-can-tablet@2x.jpg 2x">
+          <img
+            src="img/index-can-mobile@1x.png"
+            srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro" class="promo__image">
         </picture>
         <button class="button promo__button" type="button">Подобрать программу</button>
       </div>
@@ -123,9 +131,30 @@
         </div>
         <div class="example__result">
           <picture>
-            <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png">
-            <img class="example__result example__result--before" src="img/before-mobile@1x.png" alt="Cat before">
+            <source
+              media="(min-width: 1300px)"
+              srcset="img/before-desktop@1x.png 1x,
+                      img/before-desktop@2x.png 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/before-tablet@1x.png 1x,
+                      img/before-tablet@2x.png 2x">
+            <img class="example__result example__result--before"
+              src="img/before-mobile@1x.png"
+              srcset="img/before-mobile@2x.png 2x" alt="Cat before">
+          </picture>
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="img/after-desktop@1x.png 1x,
+                      img/after-desktop@2x.png 2x">
+            <source
+              media="(min-width: 768px)"
+              srcset="img/after-tablet@1x.png 1x,
+                      img/after-tablet@2x.png 2x">
+            <img class="example__result example__result--after"
+              src="img/after-mobile@1x.png"
+              srcset="img/after-mobile@2x.png 2x" alt="Cat after">
           </picture>
           </div>
       </div>
@@ -142,10 +171,11 @@
       </div>
       </div>
       <div class="contacts__map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1392.9727267777073!2d30.32382743430132!3d59.938536473587085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557263718923!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         <picture>
           <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
-          <img src="img/bg-map-mobile@1x.png" alt="Адрес компании">
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" alt="Адрес компании">
         </picture>
       </div>
     </section>
