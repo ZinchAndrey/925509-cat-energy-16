@@ -1,11 +1,15 @@
 .form-checkbox {
-  // display: block;
   margin-bottom: 28px;
   position: relative;
   padding-left: 45px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--extra {
+    box-sizing: border-box;
+    width: 100%;
   }
 
   &:hover &__description::before {
@@ -41,6 +45,11 @@
 
     &--extra {
       width: 45%;
+      margin-bottom: 55px;
+
+      &:nth-child(2n+1) {
+        margin-right: 60px;
+      }
     }
 
     &__description::before {
@@ -60,6 +69,11 @@
   .form-checkbox {
     &--extra {
       width: 20%;
+      margin-right: 80px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

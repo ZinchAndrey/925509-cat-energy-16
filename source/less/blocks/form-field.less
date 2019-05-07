@@ -39,7 +39,7 @@
     right: 16px;
   }
 
-  &__contacts--phone svg {
+  &--contacts-phone svg {
     position: absolute;
     right: 12px;
   }
@@ -52,11 +52,11 @@
       line-height: 20px;
     }
 
-    &__contacts--email svg {
+    &--contacts-email svg {
       right: 20px;
     }
 
-    &__contacts--phone svg {
+    &--contacts-phone svg {
       right: 16px;
     }
   }
@@ -64,8 +64,13 @@
 
 @media (min-width: @desktop-width) {
   .form-field {
-    &__contacts {
+    &--contacts-email,
+    &--contacts-phone {
       width: 45%;
+    }
+
+    &--contacts-email {
+      margin-right: auto;
     }
   }
 }
