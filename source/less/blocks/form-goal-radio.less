@@ -7,26 +7,24 @@
     margin-bottom: 0;
   }
 
+  &:hover &__description::before {
+    border: 1px solid @dark-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &__description::before {
     content: "";
     width: 30px;
     height: 30px;
     border-radius: 15px;
-    border: 1px solid @dark-grey;
+    border: 1px solid @light-grey;
     position: absolute;
     left: -40px;
     top: -5px;
   }
-
-  // &__description::after {
-  //   content: "";
-  //   display: none;
-  // }
-
-  // &__input + .form-goal-radio__description::after {
-  //   content: "";
-  //   display: none;
-  // }
 
   &__input:checked + .form-goal-radio__description::after {
     content: "";
@@ -37,6 +35,5 @@
     position: absolute;
     left: -30px;
     top: 5px;
-    display: block;
   }
 }
