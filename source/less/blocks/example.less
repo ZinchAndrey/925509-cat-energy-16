@@ -7,8 +7,8 @@
     line-height: 60px;
     text-transform: none;
     font-weight: 400;
-    padding-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 18px;
+    margin-bottom: 24px;
   }
 
   &__wrapper {
@@ -20,8 +20,8 @@
     text-transform: none;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 30px;
-    width: 95%;
+    margin-bottom: 25px;
+    width: 96%;
   }
 
   &__list {
@@ -29,17 +29,25 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 22px;
   }
 
   &__result--after {
     display: none;
+  }
+
+  &__result {
+    margin-bottom: 41px;
+    // временно
   }
 }
 
 @media (min-width: @tablet-width) {
   .example {
     background-color: @white;
+    margin-top: -32px;
+    border-top: 1px solid @grey;
+    padding-top: 22px;
 
     &__wrapper {
       .container-tablet;
@@ -49,13 +57,13 @@
       .container-tablet;
       font-size: 60px;
       line-height: 60px;
-      margin-bottom: 70px;
+      margin-bottom: 65px;
     }
 
     &__info {
       font-size: 16px;
       line-height: 24px;
-      margin-bottom: 50px;
+      margin-bottom: 54px;
     }
 
     &__result {
@@ -64,8 +72,10 @@
 
       &--after,
       &--before {
-        margin-top: -150px;
-        background-image: linear-gradient(@white 150px, @grey 150px);
+        margin-top: -170px;
+        margin-left: -15px;
+        background-image: linear-gradient(@white 170px, @grey 170px);
+        padding-bottom: 110px; /*временно*/
       }
     }
 
@@ -91,10 +101,11 @@
       background-color: @grey;
       .container-desktop;
       display: flex;
+      padding-bottom: 15px;
     }
 
     &__wrapper {
-      padding: 70px 140px 70px 0;
+      padding: 55px 90px 0 0;
       box-sizing: border-box;
       width: 570px;
     }
@@ -109,6 +120,7 @@
 
     &__list {
       margin-bottom: 0;
+      padding-right: 90px;
     }
   }
 }

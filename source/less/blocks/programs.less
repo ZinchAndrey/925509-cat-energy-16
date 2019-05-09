@@ -5,7 +5,7 @@
     background-color: @grey;
     margin: 0 auto;
     margin-bottom: 20px;
-    padding: 20px;
+    padding: 5px 20px 20px;
   }
 
   &__title {
@@ -13,7 +13,7 @@
     line-height: 37px;
     font-weight: 400;
     text-align: left;
-    padding: 20px 0;
+    padding: 22px 0;
     margin: 0;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
     line-height: 18px;
     margin: auto;
     border-bottom: 1px solid @light-grey;
-    padding-bottom: 25px;
+    padding-bottom: 21px;
   }
 
   &__link {
@@ -62,7 +62,7 @@
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-size: 25px 12px;
-    background-position: 100px 22px;
+    background-position: 95px 23px;
 
     &:hover {
       background-image: url("../img/icon-right-arrow-verylong.svg");
@@ -82,16 +82,20 @@
 
     &__item {
       width: auto;
-      padding: 80px 280px 60px 50px;
+      padding: 75px 280px 60px 52px;
       text-align: left;
-      margin-bottom: 30px;
+      margin-bottom: 33px;
       position: relative;
+
+      &--weight-gain {
+        padding-right: 312px;
+      }
     }
 
     &__icon {
       position: absolute;
-      right: 60px;
-      top: 100px;
+      right: 40px;
+      top: 90px;
       height: auto;
       width: auto;
 
@@ -115,14 +119,14 @@
       line-height: 37px;
       padding: 0;
       margin: 0;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     &__description {
       font-size: 16px;
       line-height: 24px;
       border-bottom: none;
-      padding-bottom: 60px;
+      padding-bottom: 56px;
     }
 
     &__link {
@@ -146,16 +150,24 @@
 
     &__item {
       width: 47%;
-      padding: 45px 50px 60px;
+      padding: 45px 53px 60px;
       box-sizing: border-box;
       margin: 0;
-      margin-bottom: 80px;
+      margin-bottom: 60px;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__description {
+      padding-bottom: 30px;
     }
 
     &__icon {
       top: 0;
       left: 0;
-      margin-right: 40px;
+      margin-right: 63px;
       position: relative;
 
       &::before {

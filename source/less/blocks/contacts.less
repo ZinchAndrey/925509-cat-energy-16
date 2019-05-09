@@ -36,10 +36,12 @@
 
   &__map {
     position: relative;
+  }
 
-    & iframe {
-      border: none;
-    }
+  &__google-map {
+    border: none;
+    width: 100%;
+    height: 360px;
   }
 
   &__map img {
@@ -62,7 +64,8 @@
   .contacts {
     &__wrapper {
       .container-tablet;
-      padding: 65px 70px;
+      padding: 64px 71px;
+      padding-bottom: 60px;
     }
 
     &__title {
@@ -79,13 +82,17 @@
       line-height: 20px;
 
       &--adress {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
       }
     }
 
     &__map img {
       width: 100%;
       height: auto;
+    }
+
+    &__google-map {
+      height: 400px;
     }
   }
 }
@@ -99,19 +106,21 @@
 
     &__wrapper {
       position: absolute;
-      top: 100px;
+      top: 95px;
       left: 40px;
       width: 570px;
       background-color: @white;
       padding: 65px 75px;
+      padding-bottom: 55px;
+      z-index: 1;
     }
 
     &__title {
-      width: 30%;
+      width: 40%;
     }
 
     &__info {
-      width: 43%;
+      width: 40%;
       text-align: left;
       display: block;
 

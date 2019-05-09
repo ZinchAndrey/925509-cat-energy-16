@@ -8,13 +8,13 @@
     width: 100%;
     flex-wrap: nowrap;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
     justify-content: center;
     padding: 15px 0;
   }
 
   &__expenses {
-    padding-top: 18px;
+    padding-top: 15px;
     padding-bottom: 18px;
     display: block;
     border: 1px solid @light-grey;
@@ -43,7 +43,7 @@
     display: block;
     width: auto;
     text-align: center;
-    top: 100%;
+    top: 95%;
     left: 50%;
     background-color: @grey;
     transform: translate(-50%, -40%);
@@ -53,6 +53,7 @@
     &--inline {
       position: static;
       transform: none;
+      text-transform: uppercase;
       font-family: @oswald;
       font-size: 14px;
       line-height: 20px;
@@ -90,11 +91,14 @@
       line-height: 14px;
       background-color: @white;
       width: auto;
+      padding: 0 10px;
+      white-space: nowrap;
 
       &--inline {
         font-size: 20px;
         line-height: 20px;
         margin-left: auto;
+        padding: 5px 0;
       }
     }
   }
@@ -102,13 +106,14 @@
 
 @media (min-width: @desktop-width) {
   .example-item {
-    width: 42%;
+    width: 44%;
 
     &--inline {
       flex-wrap: nowrap;
-      width: 83%;
-      padding: 50px 0;
+      width: 90%;
+      padding: 55px 0;
       justify-content: space-between;
+      align-items: center;
     }
 
     &__expenses {
