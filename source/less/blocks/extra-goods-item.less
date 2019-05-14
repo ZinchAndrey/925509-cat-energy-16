@@ -1,10 +1,7 @@
 .extra-goods-item {
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   border-bottom: 1px solid darken(@grey, 20%);
-
-  // &__wrapper {
-  // }
 
   &__title {
     margin: 0;
@@ -22,18 +19,25 @@
     box-sizing: border-box;
     color: @grey-text;
     border-collapse: collapse;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__button {
     width: 100%;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .extra-goods-item {
-    padding: 27px 50px;
+    padding: 24px 38px;
 
     &__wrapper {
       display: flex;
@@ -58,8 +62,13 @@
       text-align: right;
     }
 
+    &__column:first-child {
+      flex: 1;
+    }
+
     &__column:last-child {
-      width: 132px;
+      width: 95px;
+      box-sizing: border-box;
     }
 
     &__button {
