@@ -15,26 +15,26 @@
 
     &--cat-info {
       padding-top: 40px;
-      padding-bottom: 20px;
+      padding-bottom: 23px;
     }
 
     &--goal {
       border-top: 1px solid @light-grey;
       border-bottom: 1px solid @light-grey;
-      padding-top: 28px;
+      padding-top: 27px;
       padding-bottom: 28px;
       box-sizing: border-box;
       margin-bottom: 30px;
     }
 
     &--contacts {
-      padding-top: 30px;
+      padding-top: 32px;
       padding-bottom: 30px;
     }
 
     &--comment {
       padding-top: 35px;
-      padding-bottom: 30px;
+      padding-bottom: 28px;
 
       & textarea {
         box-sizing: border-box;
@@ -44,14 +44,16 @@
         font-weight: 400;
         text-transform: uppercase;
         width: 100%;
-        padding: 15px;
+        padding: 13px;
+        padding-top: 10px;
         border: 1px solid @light-grey;
+        min-height: 232px;
       }
     }
 
     &--extra {
       padding-bottom: 40px;
-      padding-top: 40px;
+      padding-top: 41px;
     }
   }
 
@@ -62,11 +64,11 @@
 
   &__bottom {
     .container;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 
     & span {
       text-transform: none;
-      display: inline;
+      display: block;
       text-align: center;
       font-family: @arial;
       font-size: 14px;
@@ -77,6 +79,8 @@
   &__button {
     width: 100%;
     margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -88,36 +92,38 @@
       line-height: 20px;
 
       &--cat-info {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 67px;
+        padding-bottom: 73px;
       }
 
       &--goal {
         border: 1px solid @light-grey;
-        width: 87%;
+        width: 82%;
         padding: 35px 90px;
-        margin-bottom: 80px;
+        margin-bottom: 75px;
       }
 
       &--contacts {
-        padding-top: 80px;
-        padding-bottom: 70px;
+        padding-top: 75px;
+        padding-bottom: 65px;
       }
 
       &--comment {
-        padding-top: 80px;
+        padding-top: 73px;
         padding-bottom: 70px;
 
         & textarea {
           font-size: 20px;
           line-height: 30px;
+          min-height: auto;
+          padding-left: 20px;
         }
       }
 
       &--extra {
         flex-wrap: nowrap;
-        padding-top: 70px;
-        padding-bottom: 10px;
+        padding-top: 65px;
+        padding-bottom: 5px;
       }
     }
 
@@ -130,7 +136,7 @@
     &__bottom {
       display: flex;
       .container-tablet-form;
-      align-items: baseline;
+      align-items: center;
       padding-bottom: 70px;
 
       & span {
@@ -139,7 +145,8 @@
     }
 
     &__button {
-      width: 40%;
+      width: 45%;
+      margin-bottom: 0;
       margin-left: 0;
       margin-right: 60px;
       font-size: 20px;
