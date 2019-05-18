@@ -5,6 +5,23 @@
     line-height: 24px;
     text-transform: none;
     font-weight: 400;
+    position: relative;
+  }
+
+  &__title-wrapper {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      height: 3px;
+      background-color: @green;
+      width: 60%;
+      margin-left: 25px;
+      margin-top: 12px;
+      margin-right: -20px;
+    }
   }
 
   &__fieldset {
@@ -47,7 +64,7 @@
         padding: 13px;
         padding-top: 10px;
         border: 1px solid @light-grey;
-        min-height: 232px;
+        min-height: 150px;
       }
     }
 
@@ -129,8 +146,24 @@
 
     &__title {
       .container-tablet-form;
+      padding-left: 30px;
       font-size: 36px;
       line-height: 36px;
+    }
+
+    &__title-wrapper {
+      z-index: 1;
+      background-color: @white;
+      display: inline-block;
+      padding: 0 40px;
+
+      &::after {
+        width: 110%;
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        right: 0;
+      }
     }
 
     &__bottom {
@@ -162,13 +195,14 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      padding-top: 70px;
+      padding-top: 65px;
       padding-bottom: 70px;
     }
 
     &__title {
       display: block;
       .container-desktop;
+      padding-left: 0;
     }
 
     &__fieldset {
@@ -178,12 +212,12 @@
 
       &--cat-info {
         padding: 0;
-        width: 45%;
+        width: 47%;
       }
 
       &--goal {
         padding-left: 90px;
-        width: 45%;
+        width: 47%;
       }
 
       &--contacts {
@@ -194,15 +228,23 @@
 
       &--comment {
         .container-desktop;
+        padding-top: 78px;
       }
 
       &--extra {
         .container-desktop;
+        padding-bottom: 15px;
       }
+    }
+
+    &__fieldset-wrapper {
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
 
     &__bottom {
       .container-desktop;
+      padding-bottom: 80px;
     }
 
     &__button {
