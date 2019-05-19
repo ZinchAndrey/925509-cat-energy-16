@@ -6,6 +6,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <link href="source/fonts/oswaldregular.woff" rel="stylesheet">
     <link href="source/fonts/oswaldmedium.woff" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -26,7 +27,8 @@
           <rect y="8" width="24" height="2"/>
           <rect width="24" height="2"/>
         </svg>
-        <span class="visually-hidden">Открыть меню</span></button>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list main-nav__list--show site-list">
         <li class="site-list__item site-list__item--index-active"><a>Главная</a></li>
         <li class="site-list__item site-list__item--index"><a href="catalog.html">Каталог продукции</a></li>
@@ -53,7 +55,7 @@
             src="img/index-can-mobile@1x.png"
             srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro" class="promo__image">
         </picture>
-        <button class="button promo__button" type="button">Подобрать программу</button>
+        <a class="button promo__button" href="form.html">Подобрать программу</a>
       </div>
     </section>
     <section class="programs">
@@ -75,100 +77,107 @@
       </div>
     </section>
     <section class="work-description">
-        <h3 class="work-description__title">Как это работает</h3>
-        <ul class="work-description__list">
-          <li class="work-description__item">
-            <span class="work-description__icon">
-              <img src="img/advantage-leaf@1x.png" alt="Полезные вещества">
-            </span>
-            <p class="work-description__text">Функциональное питание содержит только полезные питательные вещества.</p>
-            <span class="work-description__background-number">1</span>
-          </li>
-          <li class="work-description__item">
-            <span class="work-description__icon">
-              <img src="img/advantage-powder@1x.png" alt="Порошок">
-            </span>
-            <p class="work-description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            <span class="work-description__background-number">2</span>
-          </li>
-          <li class="work-description__item">
-            <span class="work-description__icon">
-              <img src="img/advantage-dining@1x.png" alt="Экономия времени">
-            </span>
-            <p class="work-description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            <span class="work-description__background-number">3</span>
-          </li>
-          <li class="work-description__item">
-            <span class="work-description__icon">
-              <img src="img/advantage-clock@1x.png" alt="Быстрый результат">
-            </span>
-            <p class="work-description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            <span class="work-description__background-number">4</span>
-          </li>
-        </ul>
-      </div>
+      <h3 class="work-description__title">Как это работает</h3>
+      <ul class="work-description__list">
+        <li class="work-description__item">
+          <span class="work-description__icon">
+            <img src="img/advantage-leaf@1x.png" alt="Полезные вещества">
+          </span>
+          <p class="work-description__text">Функциональное питание содержит только полезные питательные вещества.</p>
+          <span class="work-description__background-number">1</span>
+        </li>
+        <li class="work-description__item">
+          <span class="work-description__icon">
+            <img src="img/advantage-powder@1x.png" alt="Порошок">
+          </span>
+          <p class="work-description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+          <span class="work-description__background-number">2</span>
+        </li>
+        <li class="work-description__item">
+          <span class="work-description__icon">
+            <img src="img/advantage-dining@1x.png" alt="Экономия времени">
+          </span>
+          <p class="work-description__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
+          <span class="work-description__background-number">3</span>
+        </li>
+        <li class="work-description__item">
+          <span class="work-description__icon">
+            <img src="img/advantage-clock@1x.png" alt="Быстрый результат">
+          </span>
+          <p class="work-description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+          <span class="work-description__background-number">4</span>
+        </li>
+      </ul>
     </section>
     <section class="example">
       <h3 class="example__title">Живой пример</h3>
       <div class="example__cover">
         <div class="example__container">
-        <div class="example__wrapper">
-          <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <ul class="example__list">
-            <li class="exaple__item example-item">
-              <span class="example-item__expenses">5 кг</span>
-              <span class="example-item__result">Снижение веса</span>
-            </li>
-            <li class="exaple__item  example-item">
-              <span class="example-item__expenses">60 дней</span>
-              <span class="example-item__result">Затрачено времени</span>
-            </li>
-            <li class="exaple__item  example-item example-item--inline ">
-              <span class="example-item__expenses example-item__expenses--inline">Затраты на питание:</span>
-              <span class="example-item__result example-item__result--inline">15 000 руб.</span>
-            </li>
-          </ul>
-        </div>
-        <div class="example__result">
-          <picture>
-            <source
-              media="(min-width: 1300px)"
-              srcset="img/before-desktop@1x.png 1x,
-                      img/before-desktop@2x.png 2x">
-            <source
-              media="(min-width: 768px)"
-              srcset="img/before-tablet@1x.png 1x,
-                      img/before-tablet@2x.png 2x">
-            <img class="example__result example__result--before"
-              src="img/before-mobile@1x.png"
-              srcset="img/before-mobile@2x.png 2x" alt="Cat before">
-          </picture>
-          <picture>
-            <source
-              media="(min-width: 1300px)"
-              srcset="img/after-desktop@1x.png 1x,
-                      img/after-desktop@2x.png 2x">
-            <source
-              media="(min-width: 768px)"
-              srcset="img/after-tablet@1x.png 1x,
-                      img/after-tablet@2x.png 2x">
-            <img class="example__result example__result--after"
-              src="img/after-mobile@1x.png"
-              srcset="img/after-mobile@2x.png 2x" alt="Cat after">
-          </picture>
+          <div class="example__wrapper">
+            <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <ul class="example__list">
+              <li class="exaple__item example-item">
+                <span class="example-item__expenses">5 кг</span>
+                <span class="example-item__result">Снижение веса</span>
+              </li>
+              <li class="exaple__item  example-item">
+                <span class="example-item__expenses">60 дней</span>
+                <span class="example-item__result">Затрачено времени</span>
+              </li>
+              <li class="exaple__item  example-item example-item--inline ">
+                <span class="example-item__expenses example-item__expenses--inline">Затраты на питание:</span>
+                <span class="example-item__result example-item__result--inline">15 000 руб.</span>
+              </li>
+            </ul>
           </div>
-      </div>
+          <div class="example__result">
+            <picture>
+              <source
+                media="(min-width: 1300px)"
+                srcset="img/before-desktop@1x.png 1x,
+                        img/before-desktop@2x.png 2x">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/before-tablet@1x.png 1x,
+                        img/before-tablet@2x.png 2x">
+              <img class="example__result-img example__result-img--before"
+                src="img/before-mobile@1x.png"
+                srcset="img/before-mobile@2x.png 2x" alt="Cat before">
+            </picture>
+            <picture>
+              <source
+                media="(min-width: 1300px)"
+                srcset="img/after-desktop@1x.png 1x,
+                        img/after-desktop@2x.png 2x">
+              <source
+                media="(min-width: 768px)"
+                srcset="img/after-tablet@1x.png 1x,
+                        img/after-tablet@2x.png 2x">
+              <img class="example__result-img example__result-img--after"
+                src="img/after-mobile@1x.png"
+                srcset="img/after-mobile@2x.png 2x" alt="Cat after">
+            </picture>
+            <div class="example__scale-container">
+              <span class="example__text">Было</span>
+              <div class="example__scale">
+                <div class="example__bar"></div>
+              </div>
+              <div class="example__slider"></div>
+              <span class="example__text">Стало</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__container">
         <div class="contacts__wrapper">
-        <h3 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
-        <div class="contacts__info">
-          <p class="contacts__info contacts__info--adress">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="contacts__info contacts__info--town">Санкт-Петербург</p>
+          <h3 class="contacts__title">Приглашаем<br>к сотрудничеству дилеров!</h3>
+          <div class="contacts__info">
+            <p class="contacts__info contacts__info--adress">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__info contacts__info--town">Санкт-Петербург</p>
+          </div>
         </div>
-      </div>
       </div>
       <div class="contacts__map">
         <iframe class="contacts__google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1392.9727267777073!2d30.32382743430132!3d59.938536473587085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1557263718923!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
