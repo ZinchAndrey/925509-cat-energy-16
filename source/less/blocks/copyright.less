@@ -1,7 +1,7 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 15px;
   text-transform: none;
   font-family: @arial;
   color: #717171;
@@ -15,6 +15,15 @@
     color: @green;
     opacity: 0.3;
   }
+
+  &__link {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__logo svg {
+    width: 35px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -22,9 +31,11 @@
     margin: 0;
     font-size: 16px;
     line-height: 16px;
+    width: 162px;
+    margin-top: -5px;
 
     &__logo {
-      margin-left: 25px;
+      // margin-left: 25px;
     }
   }
 }
