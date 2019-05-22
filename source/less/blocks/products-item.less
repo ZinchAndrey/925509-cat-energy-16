@@ -1,8 +1,8 @@
 .products-item {
   border-bottom: 1px solid @light-grey;
   .container;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 22px;
+  padding-bottom: 21.5px;
   display: flex;
   flex-wrap: wrap;
 
@@ -15,6 +15,12 @@
     font-size: 16px;
     line-height: 20px;
     width: 60%;
+    margin-top: 0;
+    margin-bottom: 11px;
+  }
+
+  &__image {
+    margin-top: -22px;
   }
 
   &__table {
@@ -28,6 +34,10 @@
     border-collapse: collapse;
   }
 
+  &__column {
+    padding: 0;
+  }
+
   &__column:last-child {
     text-align: right;
   }
@@ -35,13 +45,32 @@
   &__button {
     width: 280px;
     margin: 0 auto;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 20px;
+  }
+
+  &--more {
+    padding-top: 27px;
+  }
+
+  &__plus {
+    display: block;
+    opacity: 0.2;
+    margin: 0 auto 20px;
+    text-align: center;
+
+    img {
+      width: 30px;
+      height: auto;
+    }
   }
 
   &__title--more {
     width: 100%;
     margin: 0;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   &__slogan {
@@ -59,6 +88,8 @@
     background-color: @grey;
     width: 280px;
     color: @grey-text;
+    font-size: 16px;
+    line-height: 20px;
 
     &:hover {
       background-color: darken(@grey, 5%);
@@ -74,7 +105,7 @@
 
 @media (min-width: @tablet-width) {
   .products-item {
-    margin: 0 60px 140px 0;
+    margin: 0 60px 138px 0;
     padding: 0 38px 40px;
     width: calc(50% - 30px);
     background-color: @grey;
@@ -87,14 +118,14 @@
 
     &__image {
       width: calc(100% + 80px);
-      margin-top: -45px;
-      margin-bottom: 50px;
+      margin-top: -47px;
+      margin-bottom: 33px;
       margin-left: -40px;
       margin-right: -20px;
     }
 
     &__image--big {
-      margin-top: -80px;
+      margin-top: -82px;
     }
 
     &__info {
@@ -107,19 +138,19 @@
       display: block;
       text-align: center;
       margin: 0 auto;
-      margin-bottom: 25px;
+      margin-bottom: 17px;
     }
 
     &__table {
       font-size: 16px;
       width: 100%;
       margin: 0 auto;
-      margin-bottom: 35px;
+      margin-bottom: 33px;
     }
 
     &__column {
       border-bottom: 1px solid @light-grey;
-      padding-bottom: 5px;
+      padding-bottom: 7px;
       padding-top: 10px;
     }
 
@@ -128,28 +159,40 @@
       font-size: 16px;
       line-height: 20px;
     }
+
+    &__plus {
+      margin-bottom: 47px;
+
+      img {
+        width: 60px;
+      }
+    }
   }
 
   .products-item--more {
     background-color: @white;
     border: 1px solid @grey;
+    padding-top: 55px;
 
     .products-item__title {
-      padding-top: 180px;
+      padding: 0 35px;
+      box-sizing: border-box;
+      margin-bottom: 25px;
     }
 
     .products-item__slogan {
       font-size: 16px;
-      line-height: 16px;
-      margin-bottom: 100px;
+      line-height: 18px;
+      margin-bottom: 87px;
       text-align: center;
+      box-sizing: border-box;
+      padding: 0 25px;
     }
 
     .products-item__button--show {
       width: 100%;
       font-size: 16px;
       line-height: 20px;
-      margin-bottom: 40px;
     }
   }
 }
@@ -166,6 +209,24 @@
 
     &:nth-child(4n) {
       margin-right: 0;
+    }
+
+    &__title {
+      width: 80%;
+    }
+
+    &__image {
+      margin-bottom: 31px;
+    }
+
+    &--more {
+      .products-item__title {
+        padding: 0;
+      }
+
+      .products-item__slogan {
+        padding: 0;
+      }
     }
   }
 }

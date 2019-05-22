@@ -1,5 +1,5 @@
 .form-checkbox {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   position: relative;
   padding-left: 45px;
 
@@ -29,6 +29,7 @@
     top: -5px;
     left: 0;
     color: @green;
+    box-sizing: border-box;
   }
 
   &__input:checked + .form-checkbox__description::before {
@@ -45,7 +46,7 @@
 
     &--extra {
       width: 45%;
-      margin-bottom: 55px;
+      margin-bottom: 51px;
 
       &:nth-child(2n+1) {
         margin-right: 60px;
@@ -69,7 +70,11 @@
   .form-checkbox {
     &--extra {
       width: 20%;
-      margin-right: 80px;
+      margin-right: 75px;
+
+      &:nth-child(2n+1) {
+        margin-right: 75px;
+      }
 
       &:last-child {
         margin-right: 0;

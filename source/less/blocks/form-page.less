@@ -1,6 +1,9 @@
 .form-page {
+  border-top: 1px solid #d9d9d9;
+
   &__wrapper {
     .container;
+    padding-top: 12px;
   }
 
   &__main-title {
@@ -8,20 +11,24 @@
     line-height: 60px;
     text-transform: none;
     font-weight: 400;
-    margin-bottom: 35px;
+    margin: 0;
   }
 
   &__info {
-    margin-left: 0;
+    margin: 0;
     width: 85%;
     text-align: left;
+    margin-top: 25px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .form-page {
+    border: none;
+
     &__wrapper {
       .container-tablet;
+      padding-top: 0;
     }
 
     &__main-title {
@@ -44,6 +51,7 @@
   .form-page {
     &__wrapper {
       .container-desktop;
+      padding-top: 50px;
     }
 
     &__info {

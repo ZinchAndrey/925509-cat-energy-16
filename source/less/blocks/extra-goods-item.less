@@ -1,10 +1,7 @@
 .extra-goods-item {
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 13px;
+  padding-bottom: 16px;
   border-bottom: 1px solid darken(@grey, 20%);
-
-  // &__wrapper {
-  // }
 
   &__title {
     margin: 0;
@@ -22,18 +19,26 @@
     box-sizing: border-box;
     color: @grey-text;
     border-collapse: collapse;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__button {
     width: 100%;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .extra-goods-item {
-    padding: 27px 50px;
+    padding: 24px 38px;
+    border: 1px solid darken(@grey, 20%);
 
     &__wrapper {
       display: flex;
@@ -53,13 +58,18 @@
       line-height: 20px;
       max-width: 280px;
       margin: 0;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       border-spacing: 55px;
       text-align: right;
     }
 
+    &__column:first-child {
+      flex: 1;
+    }
+
     &__column:last-child {
-      width: 132px;
+      width: 95px;
+      box-sizing: border-box;
     }
 
     &__button {
@@ -71,7 +81,9 @@
 
 @media (min-width: @desktop-width) {
   .extra-goods-item {
-    padding: 14px 0;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid darken(@grey, 20%);
 
     &__wrapper {
       flex-wrap: nowrap;
@@ -84,11 +96,22 @@
     &__button {
       max-width: 245px;
       margin: 0;
-      margin-left: 40px;
+      margin-left: 35px;
     }
 
     &__table {
       margin-bottom: 0;
+      max-width: 290px;
+    }
+
+    &__column:first-child {
+      flex: none;
+    }
+
+    &__column:last-child {
+      width: auto;
+      min-width: 40px;
+      text-align: left;
     }
   }
 }

@@ -20,11 +20,12 @@
 
 @media (min-width: @tablet-width) {
   .site-list {
-    padding-top: 15px;
+    padding-top: 13px;
 
     &__item {
       padding: 5px 0;
       border-top: none;
+      margin: 0;
 
       &:hover {
         opacity: 0.6;
@@ -36,6 +37,7 @@
 
       &--active {
         border-bottom: 2px solid @green;
+        padding-bottom: 7px;
       }
 
       &--index-active {
@@ -48,6 +50,8 @@
 @media (min-width: @desktop-width) {
   .site-list {
     &__item {
+      padding-bottom: 10px;
+
       &--index {
         color: @white;
       }

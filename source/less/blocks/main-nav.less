@@ -8,7 +8,7 @@
 
   &__toggle {
     position: absolute;
-    right: 20px;
+    right: 15px;
     top: -45px;
     display: block;
     background-color: inherit;
@@ -19,6 +19,16 @@
     & svg {
       width: 24px;
       height: 20px;
+    }
+  }
+
+  &__list {
+    &--show {
+      display: block;
+    }
+
+    &--close {
+      display: none;
     }
   }
 }
@@ -44,9 +54,16 @@
 
 @media (min-width: @desktop-width) {
   .main-nav {
+    font-size: 20px;
+    line-height: 24px;
+
     &--index {
       background-color: transparent;
       color: @white;
+    }
+
+    &__list {
+      width: 480px;
     }
   }
 }

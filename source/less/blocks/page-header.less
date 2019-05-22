@@ -3,6 +3,10 @@
     .container;
     padding-top: 15px;
     padding-bottom: 15px;
+
+    img {
+      width: 190px;
+    }
   }
 
   &__logo-link img {
@@ -27,7 +31,7 @@
     padding-bottom: 25px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
 
     &__wrapper {
       padding: 0;
@@ -44,8 +48,14 @@
 @media (min-width: @desktop-width) {
   .page-header {
     .container-desktop;
-    padding-top: 50px;
+    padding-top: 55px;
     position: relative;
     z-index: 2;
+
+    &__wrapper {
+      img {
+        width: 202px;
+      }
+    }
   }
 }

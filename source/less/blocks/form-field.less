@@ -1,6 +1,6 @@
 .form-field {
   display: flex;
-  padding-bottom: 15px;
+  padding-bottom: 13px;
   width: 100%;
   align-items: center;
   white-space: nowrap;
@@ -13,7 +13,7 @@
   input {
     box-sizing: border-box;
     margin-left: 15px;
-    padding: 15px;
+    padding: 13px;
     font-size: 16px;
     line-height: 18px;
     font-family: @oswald;
@@ -34,6 +34,13 @@
     }
   }
 
+  &--contacts-email,
+  &--contacts-phone {
+    input {
+      margin-left: 12px;
+    }
+  }
+
   &--contacts-email svg {
     position: absolute;
     right: 16px;
@@ -47,9 +54,14 @@
 
 @media (min-width: @tablet-width) {
   .form-field {
+    padding-bottom: 20px;
+
     input {
       font-size: 20px;
       line-height: 20px;
+      padding: 10px;
+      padding-left: 20px;
+      margin-left: 16px;
     }
 
     &--contacts-email svg {
@@ -66,11 +78,11 @@
   .form-field {
     &--contacts-email,
     &--contacts-phone {
-      width: 45%;
+      width: 47%;
     }
 
     &--contacts-email {
-      margin-right: auto;
+      padding: 0;
     }
   }
 }

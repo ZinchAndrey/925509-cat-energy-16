@@ -5,6 +5,23 @@
     line-height: 24px;
     text-transform: none;
     font-weight: 400;
+    position: relative;
+  }
+
+  &__title-wrapper {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+    &::after {
+      content: "";
+      height: 3px;
+      background-color: @green;
+      width: 60%;
+      margin-left: 25px;
+      margin-top: 12px;
+      margin-right: -20px;
+    }
   }
 
   &__fieldset {
@@ -15,26 +32,26 @@
 
     &--cat-info {
       padding-top: 40px;
-      padding-bottom: 20px;
+      padding-bottom: 23px;
     }
 
     &--goal {
       border-top: 1px solid @light-grey;
       border-bottom: 1px solid @light-grey;
-      padding-top: 28px;
+      padding-top: 27px;
       padding-bottom: 28px;
       box-sizing: border-box;
       margin-bottom: 30px;
     }
 
     &--contacts {
-      padding-top: 30px;
+      padding-top: 32px;
       padding-bottom: 30px;
     }
 
     &--comment {
       padding-top: 35px;
-      padding-bottom: 30px;
+      padding-bottom: 25px;
 
       & textarea {
         box-sizing: border-box;
@@ -44,14 +61,16 @@
         font-weight: 400;
         text-transform: uppercase;
         width: 100%;
-        padding: 15px;
+        padding: 13px;
+        padding-top: 10px;
         border: 1px solid @light-grey;
+        min-height: 150px;
       }
     }
 
     &--extra {
-      padding-bottom: 40px;
-      padding-top: 40px;
+      padding-bottom: 42px;
+      padding-top: 41px;
     }
   }
 
@@ -62,11 +81,11 @@
 
   &__bottom {
     .container;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 
     & span {
       text-transform: none;
-      display: inline;
+      display: block;
       text-align: center;
       font-family: @arial;
       font-size: 14px;
@@ -77,6 +96,8 @@
   &__button {
     width: 100%;
     margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
@@ -88,50 +109,69 @@
       line-height: 20px;
 
       &--cat-info {
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-top: 67px;
+        padding-bottom: 73px;
       }
 
       &--goal {
         border: 1px solid @light-grey;
-        width: 87%;
+        width: 82%;
         padding: 35px 90px;
-        margin-bottom: 80px;
+        margin-bottom: 75px;
       }
 
       &--contacts {
-        padding-top: 80px;
-        padding-bottom: 70px;
+        padding-top: 75px;
+        padding-bottom: 65px;
       }
 
       &--comment {
-        padding-top: 80px;
-        padding-bottom: 70px;
+        padding-top: 77px;
+        padding-bottom: 65px;
 
         & textarea {
           font-size: 20px;
           line-height: 30px;
+          min-height: auto;
+          padding-left: 20px;
         }
       }
 
       &--extra {
         flex-wrap: nowrap;
-        padding-top: 70px;
-        padding-bottom: 10px;
+        padding-top: 68px;
+        padding-bottom: 5px;
       }
     }
 
     &__title {
       .container-tablet-form;
+      padding-left: 30px;
       font-size: 36px;
       line-height: 36px;
+    }
+
+    &__title-wrapper {
+      z-index: 1;
+      background-color: @white;
+      display: inline-block;
+      padding: 0 40px;
+
+      &::after {
+        width: 110%;
+        z-index: -1;
+        position: absolute;
+        top: 30%;
+        right: 0;
+      }
     }
 
     &__bottom {
       display: flex;
       .container-tablet-form;
-      align-items: baseline;
+      align-items: center;
       padding-bottom: 70px;
+      padding-top: 7px;
 
       & span {
         font-size: 16px;
@@ -139,7 +179,8 @@
     }
 
     &__button {
-      width: 40%;
+      width: 45%;
+      margin-bottom: 0;
       margin-left: 0;
       margin-right: 60px;
       font-size: 20px;
@@ -155,13 +196,14 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
-      padding-top: 70px;
+      padding-top: 65px;
       padding-bottom: 70px;
     }
 
     &__title {
       display: block;
       .container-desktop;
+      padding-left: 0;
     }
 
     &__fieldset {
@@ -171,12 +213,12 @@
 
       &--cat-info {
         padding: 0;
-        width: 45%;
+        width: 47%;
       }
 
       &--goal {
         padding-left: 90px;
-        width: 45%;
+        width: 47%;
       }
 
       &--contacts {
@@ -187,15 +229,23 @@
 
       &--comment {
         .container-desktop;
+        padding-top: 78px;
       }
 
       &--extra {
         .container-desktop;
+        padding-bottom: 15px;
       }
+    }
+
+    &__fieldset-wrapper {
+      flex-wrap: nowrap;
+      justify-content: space-between;
     }
 
     &__bottom {
       .container-desktop;
+      padding-bottom: 80px;
     }
 
     &__button {

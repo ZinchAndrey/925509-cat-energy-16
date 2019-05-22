@@ -1,6 +1,6 @@
 .form-goal-radio {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   position: relative;
   padding-left: 45px;
 
@@ -20,11 +20,12 @@
     content: "";
     width: 30px;
     height: 30px;
-    border-radius: 30px;
+    border-radius: 50%;
     border: 1px solid @light-grey;
     position: absolute;
     left: 0;
     top: -5px;
+    box-sizing: border-box;
   }
 
   &__input:checked + .form-goal-radio__description::after {
@@ -32,23 +33,30 @@
     width: 12px;
     height: 12px;
     background-color: @green;
-    border-radius: 12px;
+    border-radius: 50%;
     position: absolute;
-    left: 10px;
-    top: 5px;
+    left: 9px;
+    top: 4px;
   }
 }
 
 @media (min-width: @tablet-width) {
   .form-goal-radio {
     padding-left: 0;
+    margin-bottom: 32px;
 
     &__description::before {
-      left: -50px;
+      left: -60px;
+      width: 40px;
+      height: 40px;
+      top: -10px;
     }
 
     &__input:checked + .form-goal-radio__description::after {
-      left: -40px;
+      left: -49px;
+      top: 1px;
+      width: 18px;
+      height: 18px;
     }
   }
 }
