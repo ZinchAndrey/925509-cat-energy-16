@@ -32,6 +32,37 @@
       margin-right: -20px;
     }
   }
+
+  &__offer {
+    color: @white;
+    background-image: url("../img/gift-photo-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: 280px auto;
+    background-position: center;
+    margin-top: 37px;
+    margin-bottom: 32px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
+    }
+
+    & img {
+      padding: 61px 0;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    margin: 0;
+    text-align: center;
+    font-family: @arial;
+    text-transform: none;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 55px 43px;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -66,6 +97,38 @@
         right: 0;
       }
     }
+
+    &__offer {
+      background-image: url("../img/gift-photo-tablet@1x.jpg");
+      background-size: 708px auto;
+      display: flex;
+      align-items: center;
+      margin-top: 70px;
+      margin-bottom: 75px;
+      min-height: 200px;
+      // background-color: @green;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/gift-photo-tablet@2x.jpg");
+      }
+
+      & img {
+        width: 55px;
+        margin-left: 90px;
+        margin-right: 214px;
+        padding: 0;
+        padding-bottom: 10px;
+      }
+    }
+
+    &__info {
+      width: 50%;
+      text-align: left;
+      vertical-align: middle;
+      padding: 0;
+      padding-left: 65px;
+      padding-right: 120px;
+    }
   }
 }
 
@@ -91,6 +154,33 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+
+    &__offer {
+      background-image: url("../img/gift-photo-desktop@1x.jpg");
+      display: block;
+      background-size: auto;
+      width: 245px;
+      margin: 0;
+      min-height: 290px;
+      padding-top: 60px;
+      box-sizing: border-box;
+
+      img {
+        margin: 0 auto;
+        padding-bottom: 60px;
+      }
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/gift-photo-desktop@2x.jpg");
+        background-size: 245px auto;
+      }
+    }
+
+    &__info {
+      width: 100%;
+      text-align: center;
+      padding: 0 40px 35px;
     }
   }
 }
