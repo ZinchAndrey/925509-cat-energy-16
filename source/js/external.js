@@ -9,7 +9,7 @@ searchToggle.classList.add("main-nav__toggle--visible");
 // searchPopup.classList.remove("main-nav__list--show");
 searchPopup.classList.add("main-nav__list--close");
 
-searchToggle.addEventListener("click", functionvisible(evt) {
+searchToggle.addEventListener("click", function(evt) {
     evt.preventDefault();
     searchPopup.classList.toggle("main-nav__list--close");
 });
