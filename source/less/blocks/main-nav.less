@@ -5,12 +5,13 @@
   line-height: 20px;
   font-weight: 500;
   position: relative;
+  display: block;
 
   &__toggle {
     position: absolute;
     right: 15px;
     top: -45px;
-    display: block;
+    display: none;
     background-color: inherit;
     font-family: inherit;
     border: none;
@@ -21,8 +22,12 @@
       height: 20px;
     }
 
-    &--disable {
-      display: none;
+    // &--disable {
+    //   display: none;
+    // }
+
+    &--visible {
+      display: block;
     }
   }
 

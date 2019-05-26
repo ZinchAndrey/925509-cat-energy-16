@@ -1,15 +1,15 @@
-var link = document.querySelector(".main-nav__toggle");
-var searchPopup = document.querySelector(".main-nav__list--show");
-var searchToggle = document.querySelector(".main-nav__toggle--disable");
+// var link = document.querySelector(".main-nav__toggle");
+var searchPopup = document.querySelector(".main-nav__list");
+var searchToggle = document.querySelector(".main-nav__toggle");
 var orderLinks = document.querySelectorAll(".order-link");
 
-searchToggle.classList.remove("main-nav__toggle--disable");
-searchToggle.classList.add("main-nav__toggle");
+// searchToggle.classList.remove("main-nav__toggle--disable");
+searchToggle.classList.add("main-nav__toggle--visible");
 
-searchPopup.classList.remove("main-nav__list--show");
+// searchPopup.classList.remove("main-nav__list--show");
 searchPopup.classList.add("main-nav__list--close");
 
-link.addEventListener("click", function(evt) {
+searchToggle.addEventListener("click", functionvisible(evt) {
     evt.preventDefault();
     searchPopup.classList.toggle("main-nav__list--close");
 });
