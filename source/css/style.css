@@ -65,7 +65,7 @@ a {
 }
 @media (min-width: 768px) {
   .button--tall {
-    padding: 18px 20px;
+    padding: 17px 20px;
   }
 }
 .page-main {
@@ -447,7 +447,7 @@ a {
   margin: auto;
   border-bottom: 1px solid #d9d9d9;
   color: #444444;
-  padding-bottom: 21px;
+  padding-bottom: 24px;
 }
 .programs__link {
   display: block;
@@ -582,7 +582,7 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 .work-description__title {
   font-size: 36px;
@@ -591,7 +591,7 @@ a {
   font-weight: 400;
   padding-top: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 .work-description__list {
   list-style: none;
@@ -782,7 +782,7 @@ a {
   text-transform: none;
   font-weight: 400;
   padding-top: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 .example__wrapper {
   max-width: 1300px;
@@ -813,7 +813,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 35px;
 }
 .example__result {
   padding-bottom: 35px;
@@ -823,7 +823,7 @@ a {
   display: none;
 }
 .example__result-img {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 .example__scale-container {
   display: -webkit-box;
@@ -863,6 +863,8 @@ a {
   border: none;
   background-color: inherit;
   text-transform: inherit;
+  padding: 0;
+  margin: 0;
 }
 @media (min-width: 768px) {
   .example {
@@ -1058,7 +1060,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 15px 0;
+  padding-top: 17px;
 }
 .example-item__expenses {
   padding-top: 15px;
@@ -1470,8 +1472,8 @@ a {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   text-align: center;
   border-top: 1px solid #d9d9d9;
 }
@@ -1528,7 +1530,7 @@ a {
   line-height: 60px;
   margin: 0;
   padding-top: 15px;
-  padding-bottom: 27px;
+  padding-bottom: 28px;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -1671,7 +1673,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 21.5px;
+  padding-bottom: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1698,13 +1700,13 @@ a {
   line-height: 20px;
   width: 60%;
   margin-top: 0;
-  margin-bottom: 11px;
+  margin-bottom: 13px;
 }
 .products-item__title--more::before {
   content: "";
   display: block;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   width: 30px;
   height: 30px;
   background-image: url("../../img/icon-plus-mobile.svg");
@@ -1904,16 +1906,13 @@ a {
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  padding-top: 30px;
+  padding-top: 31px;
   padding-bottom: 34px;
-}
-.extra-goods__title-container {
-  max-width: 250px;
 }
 .extra-goods__title-wrapper {
   z-index: 1;
-  display: block;
   background-color: #ffffff;
+  padding-right: 25px;
 }
 .extra-goods__title-wrapper::after {
   content: "";
@@ -1932,8 +1931,8 @@ a {
   background-repeat: no-repeat;
   background-size: 280px auto;
   background-position: center;
-  margin-top: 37px;
-  margin-bottom: 32px;
+  margin-top: 38px;
+  margin-bottom: 34px;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .extra-goods__offer {
@@ -1952,13 +1951,13 @@ a {
   text-transform: none;
   font-size: 16px;
   line-height: 20px;
-  padding: 188px 55px 43px;
+  padding: 187px 55px 43px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-image: url("../../img/icon-gift.svg");
   background-size: 56px 66px;
   background-repeat: no-repeat;
-  background-position: center 65px;
+  background-position: center 62px;
 }
 @media (min-width: 768px) {
   .extra-goods {
@@ -1979,13 +1978,12 @@ a {
   .extra-goods__title {
     font-size: 36px;
     line-height: 36px;
-    padding-bottom: 78px;
-    padding-left: 37px;
-    background-color: #ffffff;
-  }
-  .extra-goods__title-container {
-    max-width: 410px;
+    padding-top: 0;
+    padding-bottom: 80px;
     padding-left: 30px;
+  }
+  .extra-goods__title-wrapper {
+    padding: 0 37px;
   }
   .extra-goods__title-wrapper::after {
     width: 100%;
@@ -2016,10 +2014,8 @@ a {
   .extra-goods__info {
     text-align: left;
     vertical-align: middle;
-    padding: 0;
-    padding-left: 425px;
-    padding-right: 120px;
-    background-position: 90px center;
+    padding: 20px 120px 20px 425px;
+    background-position: 90px 10px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
@@ -2045,14 +2041,6 @@ a {
   }
   .extra-goods__list {
     width: 73.5%;
-    border-top: 1px solid #bfbfbf;
-  }
-  .extra-goods__title-container {
-    max-width: 420px;
-    padding-left: 40px;
-    background-color: #ffffff;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
   }
   .extra-goods__wrapper {
     max-width: 1300px;
@@ -2139,7 +2127,12 @@ a {
 @media (min-width: 768px) {
   .extra-goods-item {
     padding: 24px 38px;
+    padding-bottom: 27px;
     border: 1px solid #bfbfbf;
+    border-top: none;
+  }
+  .extra-goods-item:first-child {
+    border-top: 1px solid #bfbfbf;
   }
   .extra-goods-item__wrapper {
     display: -webkit-box;
@@ -2164,7 +2157,6 @@ a {
     line-height: 20px;
     max-width: 280px;
     margin: 0;
-    margin-bottom: 24px;
     border-spacing: 55px;
     text-align: right;
   }
@@ -2182,6 +2174,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     width: 100%;
+    margin-top: 22px;
   }
 }
 @media (min-width: 1300px) {
@@ -2437,10 +2430,10 @@ a {
   }
   .form__fieldset--contacts {
     padding-top: 75px;
-    padding-bottom: 65px;
+    padding-bottom: 70px;
   }
   .form__fieldset--comment {
-    padding-top: 77px;
+    padding-top: 74px;
     padding-bottom: 65px;
   }
   .form__fieldset--comment textarea {
@@ -2564,7 +2557,7 @@ a {
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 78px;
+    padding-bottom: 68px;
   }
   .form__fieldset--extra {
     max-width: 1300px;
@@ -2573,7 +2566,7 @@ a {
     margin: 0 auto;
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
   .form__fieldset-wrapper {
     -ms-flex-wrap: nowrap;
