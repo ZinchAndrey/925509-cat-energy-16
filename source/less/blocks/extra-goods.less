@@ -14,22 +14,27 @@
     margin: 0;
     padding-top: 30px;
     padding-bottom: 34px;
-    position: relative;
+  }
+
+  &__title-container {
+    max-width: 250px;
   }
 
   &__title-wrapper {
     z-index: 1;
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    background-color: @white;
 
     &::after {
       content: "";
+      position: absolute;
+      right: 0;
       height: 3px;
       background-color: @green;
-      width: 17%;
+      width: 80%;
       margin-left: 25px;
       margin-top: 12px;
-      margin-right: -20px;
+      z-index: -1;
     }
   }
 
@@ -74,6 +79,10 @@
     padding: 0;
     margin-top: -74px;
 
+    &__list {
+      border-top: 0;
+    }
+
     &__wrapper {
       .container-tablet;
     }
@@ -81,24 +90,20 @@
     &__title {
       font-size: 36px;
       line-height: 36px;
-      padding: 0 38px;
       padding-bottom: 78px;
-      position: relative;
+      padding-left: 37px;
+      background-color: @white;
+    }
+
+    &__title-container {
+      max-width: 410px;
       padding-left: 30px;
     }
 
     &__title-wrapper {
-      z-index: 1;
-      background-color: @white;
-      display: inline-block;
-      padding: 0 40px;
-
       &::after {
-        width: 110%;
-        z-index: -1;
-        position: absolute;
-        top: 10px;
-        right: 0;
+        width: 100%;
+        margin-top: 22px;
       }
     }
 
@@ -154,6 +159,13 @@
     &__list {
       width: 73.5%;
       border-top: 1px solid darken(@grey, 20%);
+    }
+
+    &__title-container {
+      max-width: 420px;
+      padding-left: 40px;
+      background-color: @white;
+      box-sizing: border-box;
     }
 
     &__wrapper {

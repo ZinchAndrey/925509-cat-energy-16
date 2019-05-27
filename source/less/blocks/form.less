@@ -1,27 +1,39 @@
 .form {
   &__title {
     .container;
+    padding-right: 0;
     font-size: 24px;
     line-height: 24px;
     color: @black;
     text-transform: none;
     font-weight: 400;
-    position: relative;
+    // position: relative;
+  }
+
+  &__title-container {
+    // max-width: 220px;
   }
 
   &__title-wrapper {
-    z-index: 1;
+    // z-index: 1;
+    // padding-right: 20px;
     display: flex;
-    justify-content: space-between;
+    background-color: @white;
+    // flex-direction: row-reverse;
 
     &::after {
       content: "";
       height: 3px;
+      // right: 0;
+      // position: absolute;
       background-color: @green;
-      width: 60%;
+      width: 80%;
       margin-left: 25px;
       margin-top: 12px;
-      margin-right: -20px;
+      // display: block;
+      // margin-right: -20px;
+      // z-index: -1;
+      flex: 1;
     }
   }
 
@@ -158,16 +170,18 @@
     }
 
     &__title-wrapper {
-      z-index: 1;
-      background-color: @white;
-      display: inline-block;
+      // z-index: 1;
+      // background-color: @white;
+      // display: inline-block;
       padding: 0 40px;
+      display: inline-block;
 
       &::after {
-        width: 110%;
+        width: 100%;
         z-index: -1;
         position: absolute;
-        top: 30%;
+        margin-top: 20px;
+        // top: 30%;
         right: 0;
       }
     }

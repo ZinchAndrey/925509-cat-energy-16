@@ -127,11 +127,15 @@
     padding-top: 82px;
     padding-bottom: 190px;
     margin-bottom: 80px;
-    position: relative;
+    position: static;
+
+    &__wrapper {
+      position: relative;
+    }
 
     &__image {
-      top: 3px;
-      left: 490px;
+      top: -80px;
+      left: 370px;
     }
 
     &::before {
@@ -144,9 +148,9 @@
       background-position: left;
       z-index: -1;
       display: block;
-      width: 100%;
+      width: 50%;
       height: 696px;
-      top: -140px;
+      top: 0;
       left: 50%;
 
       @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
