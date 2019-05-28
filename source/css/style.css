@@ -447,7 +447,7 @@ a {
   margin: auto;
   border-bottom: 1px solid #d9d9d9;
   color: #444444;
-  padding-bottom: 24px;
+  padding-bottom: 22px;
 }
 .programs__link {
   display: block;
@@ -871,7 +871,7 @@ a {
     background-color: #ffffff;
     margin-top: -32px;
     border-top: 1px solid #f2f2f2;
-    padding-top: 22px;
+    padding-top: 25px;
   }
   .example__wrapper {
     max-width: 1300px;
@@ -1063,7 +1063,7 @@ a {
   padding-top: 17px;
 }
 .example-item__expenses {
-  padding-top: 15px;
+  padding-top: 12px;
   padding-bottom: 18px;
   display: block;
   border: 1px solid #d9d9d9;
@@ -1673,7 +1673,7 @@ a {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1706,7 +1706,7 @@ a {
   content: "";
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   width: 30px;
   height: 30px;
   background-image: url("../../img/icon-plus-mobile.svg");
@@ -1776,7 +1776,7 @@ a {
 @media (min-width: 768px) {
   .products-item {
     margin: 0 60px 138px 0;
-    padding: 0 38px 40px;
+    padding: 0 38px 38px;
     width: calc(50% - 30px);
     background-color: #f2f2f2;
     display: block;
@@ -1826,7 +1826,7 @@ a {
   }
   .products-item__column {
     border-bottom: 1px solid #d9d9d9;
-    padding-bottom: 7px;
+    padding-bottom: 6px;
     padding-top: 10px;
   }
   .products-item__button {
@@ -1864,6 +1864,7 @@ a {
   .products-item {
     width: calc(25% - 60px);
     margin-right: 80px;
+    margin-bottom: 140px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
@@ -1906,7 +1907,7 @@ a {
   font-size: 24px;
   line-height: 24px;
   margin: 0;
-  padding-top: 31px;
+  padding-top: 32px;
   padding-bottom: 34px;
 }
 .extra-goods__title-wrapper {
@@ -1962,7 +1963,7 @@ a {
 @media (min-width: 768px) {
   .extra-goods {
     padding: 0;
-    margin-top: -74px;
+    margin-top: -69px;
   }
   .extra-goods__list {
     border-top: 0;
@@ -2000,7 +2001,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     margin: 0 auto;
-    margin-top: 70px;
+    margin-top: 67px;
     margin-bottom: 75px;
     min-height: 200px;
   }
@@ -2126,7 +2127,7 @@ a {
 }
 @media (min-width: 768px) {
   .extra-goods-item {
-    padding: 24px 38px;
+    padding: 25px 38px;
     padding-bottom: 27px;
     border: 1px solid #bfbfbf;
     border-top: none;
@@ -2179,7 +2180,7 @@ a {
 }
 @media (min-width: 1300px) {
   .extra-goods-item {
-    padding: 16px 0;
+    padding: 15px 0;
     border: none;
     border-bottom: 1px solid #bfbfbf;
   }
@@ -2294,23 +2295,26 @@ a {
   color: #111111;
   text-transform: none;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__title::after {
+  content: "";
+  height: 3px;
+  background-color: #68b738;
+  margin-top: 12px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .form__title-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: #ffffff;
-}
-.form__title-wrapper::after {
-  content: "";
-  height: 3px;
-  background-color: #68b738;
-  width: 80%;
-  margin-left: 25px;
-  margin-top: 12px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  max-width: 181px;
+  padding-right: 20px;
 }
 .form__fieldset {
   border: none;
@@ -2334,7 +2338,7 @@ a {
   padding-bottom: 28px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 .form__fieldset--contacts {
   padding-top: 32px;
@@ -2342,7 +2346,7 @@ a {
 }
 .form__fieldset--comment {
   padding-top: 35px;
-  padding-bottom: 25px;
+  padding-bottom: 27px;
 }
 .form__fieldset--comment textarea {
   -webkit-box-sizing: border-box;
@@ -2359,7 +2363,7 @@ a {
   min-height: 150px;
 }
 .form__fieldset--extra {
-  padding-bottom: 42px;
+  padding-bottom: 40px;
   padding-top: 41px;
 }
 .form__fieldset-wrapper {
@@ -2430,7 +2434,7 @@ a {
   }
   .form__fieldset--contacts {
     padding-top: 75px;
-    padding-bottom: 70px;
+    padding-bottom: 66px;
   }
   .form__fieldset--comment {
     padding-top: 74px;
@@ -2458,16 +2462,17 @@ a {
     font-size: 36px;
     line-height: 36px;
   }
-  .form__title-wrapper {
-    padding: 0 40px;
-    display: inline-block;
-  }
-  .form__title-wrapper::after {
+  .form__title::after {
     width: 100%;
     z-index: -1;
     position: absolute;
     margin-top: 20px;
     right: 0;
+  }
+  .form__title-wrapper {
+    padding: 0 40px;
+    display: inline-block;
+    max-width: 515px;
   }
   .form__bottom {
     display: -webkit-box;
@@ -2569,6 +2574,7 @@ a {
     padding-bottom: 10px;
   }
   .form__fieldset-wrapper {
+    width: 100%;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: justify;
@@ -2647,6 +2653,7 @@ a {
     font-size: 20px;
     line-height: 20px;
     padding: 10px;
+    height: 52px;
     padding-left: 20px;
     margin-left: 16px;
   }

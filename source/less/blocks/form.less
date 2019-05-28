@@ -7,34 +7,22 @@
     color: @black;
     text-transform: none;
     font-weight: 400;
-    // position: relative;
-  }
-
-  &__title-container {
-    // max-width: 220px;
-  }
-
-  &__title-wrapper {
-    // z-index: 1;
-    // padding-right: 20px;
     display: flex;
-    background-color: @white;
-    // flex-direction: row-reverse;
 
     &::after {
       content: "";
       height: 3px;
-      // right: 0;
-      // position: absolute;
       background-color: @green;
-      width: 80%;
-      margin-left: 25px;
       margin-top: 12px;
-      // display: block;
-      // margin-right: -20px;
-      // z-index: -1;
       flex: 1;
     }
+  }
+
+  &__title-wrapper {
+    display: flex;
+    background-color: @white;
+    max-width: 181px;
+    padding-right: 20px;
   }
 
   &__fieldset {
@@ -54,7 +42,7 @@
       padding-top: 27px;
       padding-bottom: 28px;
       box-sizing: border-box;
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
 
     &--contacts {
@@ -64,7 +52,7 @@
 
     &--comment {
       padding-top: 35px;
-      padding-bottom: 25px;
+      padding-bottom: 27px;
 
       & textarea {
         box-sizing: border-box;
@@ -82,7 +70,7 @@
     }
 
     &--extra {
-      padding-bottom: 42px;
+      padding-bottom: 40px;
       padding-top: 41px;
     }
   }
@@ -140,7 +128,7 @@
 
       &--contacts {
         padding-top: 75px;
-        padding-bottom: 70px;
+        padding-bottom: 66px;
       }
 
       &--comment {
@@ -167,14 +155,6 @@
       padding-left: 30px;
       font-size: 36px;
       line-height: 36px;
-    }
-
-    &__title-wrapper {
-      // z-index: 1;
-      // background-color: @white;
-      // display: inline-block;
-      padding: 0 40px;
-      display: inline-block;
 
       &::after {
         width: 100%;
@@ -184,6 +164,15 @@
         // top: 30%;
         right: 0;
       }
+    }
+
+    &__title-wrapper {
+      // z-index: 1;
+      // background-color: @white;
+      // display: inline-block;
+      padding: 0 40px;
+      display: inline-block;
+      max-width: 515px;
     }
 
     &__bottom {
@@ -260,6 +249,7 @@
     }
 
     &__fieldset-wrapper {
+      width: 100%;
       flex-wrap: nowrap;
       justify-content: space-between;
     }
