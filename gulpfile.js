@@ -71,6 +71,11 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+// gulp.task("copynormalize", function () {
+//   return gulp.src("source/css/normalize.css")
+//     .pipe(gulp.dest("build/css"));
+// });
+
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
