@@ -2,9 +2,18 @@
   border-bottom: 1px solid @light-grey;
   .container;
   padding-top: 22px;
-  padding-bottom: 21.5px;
+  padding-bottom: 21px;
   display: flex;
   flex-wrap: wrap;
+  // width: 320px;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
 
   &__info {
     width: 50%;
@@ -16,7 +25,18 @@
     line-height: 20px;
     width: 60%;
     margin-top: 0;
-    margin-bottom: 11px;
+    margin-bottom: 13px;
+
+    &--more::before {
+      content: "";
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      width: 30px;
+      height: 30px;
+      background-image: url("../../img/icon-plus-mobile.svg");
+      opacity: 0.2;
+    }
   }
 
   &__image {
@@ -52,18 +72,6 @@
 
   &--more {
     padding-top: 27px;
-  }
-
-  &__plus {
-    display: block;
-    opacity: 0.2;
-    margin: 0 auto 20px;
-    text-align: center;
-
-    img {
-      width: 30px;
-      height: auto;
-    }
   }
 
   &__title--more {
@@ -106,7 +114,7 @@
 @media (min-width: @tablet-width) {
   .products-item {
     margin: 0 60px 138px 0;
-    padding: 0 38px 40px;
+    padding: 0 38px 38px;
     width: calc(50% - 30px);
     background-color: @grey;
     display: block;
@@ -114,6 +122,12 @@
 
     &:nth-child(2n) {
       margin-right: 0;
+    }
+
+    &__wrapper {
+      margin: 0;
+      width: auto;
+      display: block;
     }
 
     &__image {
@@ -139,6 +153,14 @@
       text-align: center;
       margin: 0 auto;
       margin-bottom: 17px;
+
+      &--more::before {
+        background-image: url("../../img/icon-plus.svg");
+        background-size: 60px;
+        width: 60px;
+        height: 60px;
+        margin-bottom: 50px;
+      }
     }
 
     &__table {
@@ -150,7 +172,7 @@
 
     &__column {
       border-bottom: 1px solid @light-grey;
-      padding-bottom: 7px;
+      padding-bottom: 6px;
       padding-top: 10px;
     }
 
@@ -158,14 +180,6 @@
       width: 100%;
       font-size: 16px;
       line-height: 20px;
-    }
-
-    &__plus {
-      margin-bottom: 47px;
-
-      img {
-        width: 60px;
-      }
     }
   }
 
@@ -201,6 +215,7 @@
   .products-item {
     width: calc(25% - 60px);
     margin-right: 80px;
+    margin-bottom: 140px;
     box-sizing: border-box;
 
     &:nth-child(2n) {

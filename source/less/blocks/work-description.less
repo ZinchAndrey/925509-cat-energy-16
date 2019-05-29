@@ -1,6 +1,6 @@
 .work-description {
   .container;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   &__title {
     font-size: 36px;
@@ -9,7 +9,7 @@
     font-weight: 400;
     padding-top: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   &__list {
@@ -24,6 +24,42 @@
     margin-bottom: 20px;
     display: flex;
     position: relative;
+
+    &--leaf .work-description__text::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+      background-size: 50px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-leaf@2x.png");
+      }
+    }
+
+    &--powder .work-description__text::before {
+      background-image: url("../img/advantage-powder@1x.png");
+      background-size: 50px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-powder@2x.png");
+      }
+    }
+
+    &--dining .work-description__text::before {
+      background-image: url("../img/advantage-dining@1x.png");
+      background-size: 50px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-dining@2x.png");
+      }
+    }
+
+    &--clock .work-description__text::before {
+      background-image: url("../img/advantage-clock@1x.png");
+      background-size: 50px auto;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/advantage-clock@2x.png");
+      }
+    }
   }
 
   &__icon {
@@ -35,7 +71,22 @@
 
   &__text {
     margin: 0;
-    margin-left: 20px;
+    // margin-left: 20px;
+    // padding-left: 80px;
+    color: @grey-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+      content: "";
+      min-width: 60px;
+      min-height: 60px;
+      margin-right: 20px;
+      background-color: @green;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   &__background-number {
@@ -84,6 +135,13 @@
 
     &__text {
       margin: 0;
+      flex-wrap: wrap;
+
+      &::before {
+        min-width: 80px;
+        min-height: 80px;
+        margin-bottom: 30px;
+      }
     }
 
     &__background-number {

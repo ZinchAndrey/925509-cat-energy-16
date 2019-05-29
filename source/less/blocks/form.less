@@ -1,27 +1,28 @@
 .form {
   &__title {
     .container;
+    padding-right: 0;
     font-size: 24px;
     line-height: 24px;
+    color: @black;
     text-transform: none;
     font-weight: 400;
-    position: relative;
-  }
-
-  &__title-wrapper {
-    z-index: 1;
     display: flex;
-    justify-content: space-between;
 
     &::after {
       content: "";
       height: 3px;
       background-color: @green;
-      width: 60%;
-      margin-left: 25px;
       margin-top: 12px;
-      margin-right: -20px;
+      flex: 1;
     }
+  }
+
+  &__title-wrapper {
+    display: flex;
+    background-color: @white;
+    max-width: 181px;
+    padding-right: 20px;
   }
 
   &__fieldset {
@@ -41,7 +42,7 @@
       padding-top: 27px;
       padding-bottom: 28px;
       box-sizing: border-box;
-      margin-bottom: 30px;
+      margin-bottom: 27px;
     }
 
     &--contacts {
@@ -51,7 +52,7 @@
 
     &--comment {
       padding-top: 35px;
-      padding-bottom: 25px;
+      padding-bottom: 27px;
 
       & textarea {
         box-sizing: border-box;
@@ -69,7 +70,7 @@
     }
 
     &--extra {
-      padding-bottom: 42px;
+      padding-bottom: 40px;
       padding-top: 41px;
     }
   }
@@ -99,6 +100,11 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: @grey-text;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -122,11 +128,11 @@
 
       &--contacts {
         padding-top: 75px;
-        padding-bottom: 65px;
+        padding-bottom: 66px;
       }
 
       &--comment {
-        padding-top: 77px;
+        padding-top: 74px;
         padding-bottom: 65px;
 
         & textarea {
@@ -149,21 +155,24 @@
       padding-left: 30px;
       font-size: 36px;
       line-height: 36px;
+
+      &::after {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        margin-top: 20px;
+        // top: 30%;
+        right: 0;
+      }
     }
 
     &__title-wrapper {
-      z-index: 1;
-      background-color: @white;
-      display: inline-block;
+      // z-index: 1;
+      // background-color: @white;
+      // display: inline-block;
       padding: 0 40px;
-
-      &::after {
-        width: 110%;
-        z-index: -1;
-        position: absolute;
-        top: 30%;
-        right: 0;
-      }
+      display: inline-block;
+      max-width: 515px;
     }
 
     &__bottom {
@@ -229,16 +238,18 @@
 
       &--comment {
         .container-desktop;
-        padding-top: 78px;
+        // padding-top: 78px;
+        padding-bottom: 68px;
       }
 
       &--extra {
         .container-desktop;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
       }
     }
 
     &__fieldset-wrapper {
+      width: 100%;
       flex-wrap: nowrap;
       justify-content: space-between;
     }

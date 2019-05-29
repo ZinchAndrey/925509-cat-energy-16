@@ -13,7 +13,7 @@
     line-height: 37px;
     font-weight: 400;
     text-align: left;
-    padding: 22px 0;
+    padding: 20px 0;
     margin: 0;
     display: flex;
     align-items: center;
@@ -27,24 +27,47 @@
     height: 50px;
     width: 50px;
 
-    & img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &--loosing-weight img {
-      top: 42%;
-    }
-
     &::before {
       content: "";
       display: inline-block;
       border-radius: 50%;
       border: 25px solid @green;
       box-sizing: border-box;
+      background-color: @green;
       z-index: 0;
+      position: relative;
+    }
+
+    &--loosing-weight {
+      &::after {
+        content: "";
+        background-image: url("../img/icon-cat-slim.svg");
+        background-size: 35px auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 50px;
+        min-height: 50px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &--weight-gain {
+      &::after {
+        content: "";
+        background-image: url("../img/icon-cat-pro.svg");
+        background-size: 67px auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 70px;
+        min-height: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
   }
 
@@ -55,7 +78,8 @@
     line-height: 18px;
     margin: auto;
     border-bottom: 1px solid @light-grey;
-    padding-bottom: 21px;
+    color: @grey-text;
+    padding-bottom: 22px;
   }
 
   &__link {
@@ -90,6 +114,7 @@
       text-align: left;
       margin-bottom: 33px;
       position: relative;
+      z-index: 1;
 
       &--weight-gain {
         padding-right: 312px;
@@ -103,18 +128,24 @@
       height: auto;
       width: auto;
 
-      &--loosing-weight img {
-        height: 100%;
-        width: 140px;
-      }
-
-      &--weight-gain img {
-        height: 100%;
-        width: 268px;
-      }
-
       &::before {
         border: 100px solid @green;
+      }
+
+      &--loosing-weight {
+        &::after {
+          background-size: 140px auto;
+          min-width: 150px;
+          min-height: 200px;
+        }
+      }
+
+      &--weight-gain {
+        &::after {
+          background-size: 268px auto;
+          min-width: 270px;
+          min-height: 115px;
+        }
       }
     }
 
@@ -178,14 +209,16 @@
         border: 50px solid @green;
       }
 
-      &--loosing-weight img {
-        height: 100%;
-        width: 70px;
+      &--loosing-weight {
+        &::after {
+          background-size: 70px auto;
+        }
       }
 
-      &--weight-gain img {
-        height: 100%;
-        width: 134px;
+      &--weight-gain {
+        &::after {
+          background-size: 134px auto;
+        }
       }
     }
   }
