@@ -38,6 +38,10 @@
     background-repeat: no-repeat;
     background-position: 5px 5px;
   }
+
+  &__input:focus + .form-checkbox__description::before {
+    border: 1px solid @black;
+  }
 }
 
 @media (min-width: @tablet-width) {

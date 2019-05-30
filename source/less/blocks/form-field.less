@@ -10,6 +10,14 @@
     padding-bottom: 0;
   }
 
+  &__wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+  }
+
   input {
     box-sizing: border-box;
     margin-left: 15px;
@@ -32,6 +40,14 @@
         color: @green;
       }
     }
+
+    &:invalid {
+      border: 2px solid @red;
+
+      & + svg {
+        color: @red;
+      }
+    }
   }
 
   &--contacts-email,
@@ -44,11 +60,19 @@
   &--contacts-email svg {
     position: absolute;
     right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &--contacts-phone svg {
     position: absolute;
     right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__age-input {
+    width: 170px;
   }
 }
 
