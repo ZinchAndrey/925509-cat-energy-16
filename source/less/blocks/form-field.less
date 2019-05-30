@@ -40,6 +40,14 @@
         color: @green;
       }
     }
+
+    &:invalid {
+      border: 2px solid @red;
+
+      & + svg {
+        color: @red;
+      }
+    }
   }
 
   &--contacts-email,
